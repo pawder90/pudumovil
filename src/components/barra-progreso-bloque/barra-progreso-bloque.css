@@ -1,0 +1,39 @@
+.progreso-bloque {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.progreso-bloque-cerrar {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: var(--toque-minimo);
+  height: var(--toque-minimo);
+  margin-left: calc(var(--space-3) * -1);
+  border-radius: var(--radius-full);
+  color: var(--color-texto-secundario);
+}
+
+.progreso-bloque-pista {
+  flex: 1;
+  height: var(--progreso-bloque-alto);
+  border-radius: var(--progreso-bloque-radio);
+  background-color: var(--progreso-bloque-pista);
+  overflow: hidden;
+}
+
+.progreso-bloque-relleno {
+  height: 100%;
+  border-radius: var(--progreso-bloque-radio);
+  background-color: var(--progreso-bloque-relleno);
+  transform-origin: left center;
+  transition: transform var(--motion-transicion) var(--motion-easing-estandar);
+}
+
+.progreso-bloque-cuenta {
+  flex: none;
+  font: var(--typography-etiqueta);
+  color: var(--color-texto-secundario);
+  font-variant-numeric: tabular-nums;
+}

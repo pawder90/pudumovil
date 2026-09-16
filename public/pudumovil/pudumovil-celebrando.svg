@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <title>Pudumóvil</title>
+  <g>
+    <rect x="72" y="148" width="14" height="22" rx="7" fill="#9a5424"/>
+    <rect x="114" y="148" width="14" height="22" rx="7" fill="#9a5424"/>
+    <ellipse cx="100" cy="128" rx="34" ry="30" fill="#b8672e"/>
+    <ellipse cx="100" cy="134" rx="20" ry="18" fill="#fff6e5"/><path d="M72 116 L58 84" stroke="#b8672e" stroke-width="13" stroke-linecap="round" fill="none"/><path d="M128 116 L142 84" stroke="#b8672e" stroke-width="13" stroke-linecap="round" fill="none"/>
+    <path d="M74 112 Q100 122 126 112 L128 146 Q100 154 72 146 Z" fill="#ff7a1a"/>
+    <rect x="72" y="124" width="56" height="6" fill="#c9d1d6"/>
+    <rect x="72" y="136" width="56" height="5" fill="#c9d1d6"/>
+  <g transform="rotate(0 100 80)">
+    
+    <ellipse cx="72" cy="54" rx="11" ry="16" fill="#7b421c" transform="rotate(-8 72 54)"/>
+    <ellipse cx="128" cy="54" rx="11" ry="16" fill="#7b421c" transform="rotate(8 128 54)"/>
+    <ellipse cx="100" cy="74" rx="30" ry="28" fill="#b8672e"/>
+    
+    <ellipse cx="100" cy="82" rx="14" ry="11" fill="#db965f"/>
+    <ellipse cx="100" cy="77" rx="5" ry="4" fill="#1c2830"/>
+    
+    <path d="M83 68q5-7 10 0M107 68q5-7 10 0" fill="none" stroke="#1c2830" stroke-width="4" stroke-linecap="round"/>
+    
+    <path d="M91 86q9 12 18 0Z" fill="#1c2830"/>
+    <path d="M97 92q3 6 6 0Z" fill="#e8737a"/>
+  </g>
+  </g>
+</svg>

@@ -1,5 +1,5 @@
 # Pudumóvil — reglas del proyecto
-- Fuente de verdad: docs/spec-app-examen-clase-b.md y docs/sistema-diseno/.
+- Fuente de verdad: docs/spec-app-examen-clase-b.md y docs/design-system/.
 - Stack: React + Vite + TypeScript, vite-plugin-pwa, Dexie, Motion, Style Dictionary 4.
 - Estilos: solo tokens semánticos o de componente. Nunca hex ni primitivos en componentes.
 - Contenido: nunca inventar normas de tránsito. Todo ítem cita edición, sección y página del libro.

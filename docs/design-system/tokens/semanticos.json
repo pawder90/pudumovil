@@ -72,6 +72,11 @@
         "$value": "{color.musgo.500}",
         "$type": "color",
         "$description": "Sin texto blanco pequeño encima."
+      },
+      "anillo": {
+        "$value": "{color.musgo.200}",
+        "$type": "color",
+        "$description": "Halo suave alrededor de un elemento de marca activo."
       }
     },
     "correcto": {
@@ -276,6 +281,22 @@
     }
   },
   "motion": {
+    "easing-estandar": {
+      "$value": "{easing.estandar}",
+      "$type": "cubicBezier"
+    },
+    "easing-salida": {
+      "$value": "{easing.salida}",
+      "$type": "cubicBezier"
+    },
+    "easing-entrada": {
+      "$value": "{easing.entrada}",
+      "$type": "cubicBezier"
+    },
+    "easing-rebote": {
+      "$value": "{easing.rebote}",
+      "$type": "cubicBezier"
+    },
     "presionar": {
       "$value": "{duration.instantaneo}",
       "$type": "duration"

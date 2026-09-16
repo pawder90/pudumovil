@@ -1,0 +1,81 @@
+.alternativa {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+  min-height: var(--alternativa-alto-min);
+  padding: var(--space-3) var(--space-4);
+  text-align: left;
+  border-radius: var(--alternativa-radio);
+  border: var(--alternativa-borde) solid;
+  border-bottom-width: var(--alternativa-relieve);
+  font: var(--typography-cuerpo);
+  transition:
+    transform var(--motion-presionar) var(--motion-easing-estandar),
+    border-bottom-width var(--motion-presionar) var(--motion-easing-estandar),
+    background-color var(--motion-transicion) var(--motion-easing-estandar);
+}
+
+.alternativa:disabled {
+  cursor: default;
+}
+
+.alternativa:active:not(:disabled) {
+  transform: translateY(var(--alternativa-relieve));
+  border-bottom-width: 0;
+}
+
+
+.alternativa-letra {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: var(--space-8);
+  height: var(--space-8);
+  border-radius: var(--radius-sm);
+  border: var(--alternativa-borde) solid currentcolor;
+  font: var(--typography-boton);
+}
+
+.alternativa-texto {
+  flex: 1;
+}
+
+.alternativa-marca {
+  flex: none;
+  display: flex;
+}
+
+/* El resultado en palabras existe para lectores de pantalla. */
+.alternativa-resultado {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.alternativa-reposo {
+  background-color: var(--alternativa-reposo-fondo);
+  border-color: var(--alternativa-reposo-borde);
+  color: var(--alternativa-reposo-texto);
+}
+
+.alternativa-seleccionada {
+  background-color: var(--alternativa-seleccionada-fondo);
+  border-color: var(--alternativa-seleccionada-borde);
+  color: var(--alternativa-seleccionada-texto);
+}
+
+.alternativa-correcta {
+  background-color: var(--alternativa-correcta-fondo);
+  border-color: var(--alternativa-correcta-borde);
+  color: var(--alternativa-correcta-texto);
+}
+
+.alternativa-incorrecta {
+  background-color: var(--alternativa-incorrecta-fondo);
+  border-color: var(--alternativa-incorrecta-borde);
+  color: var(--alternativa-incorrecta-texto);
+}

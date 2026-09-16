@@ -1,5 +1,9 @@
 {
   "boton": {
+    "borde": {
+      "$value": "{border-width.fino}",
+      "$type": "dimension"
+    },
     "alto": {
       "$value": "52px",
       "$type": "dimension"
@@ -73,6 +77,16 @@
       },
       "relieve": {
         "$value": "{color.logro.relieve}",
+        "$type": "color"
+      }
+    },
+    "deshabilitado": {
+      "fondo": {
+        "$value": "{color.borde.default}",
+        "$type": "color"
+      },
+      "texto": {
+        "$value": "{color.texto.deshabilitado}",
         "$type": "color"
       }
     }
@@ -206,7 +220,7 @@
         "$type": "color"
       },
       "anillo": {
-        "$value": "{color.musgo.200}",
+        "$value": "{color.marca.anillo}",
         "$type": "color"
       }
     },
@@ -254,6 +268,24 @@
     },
     "borde": {
       "$value": "{color.borde.default}",
+      "$type": "color"
+    }
+  },
+  "progreso-bloque": {
+    "alto": {
+      "$value": "12px",
+      "$type": "dimension"
+    },
+    "radio": {
+      "$value": "{radius.full}",
+      "$type": "dimension"
+    },
+    "pista": {
+      "$value": "{color.progreso.pista}",
+      "$type": "color"
+    },
+    "relleno": {
+      "$value": "{color.progreso.relleno}",
       "$type": "color"
     }
   },
