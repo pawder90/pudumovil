@@ -1,0 +1,92 @@
+.nodo-camino-sitio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.nodo-camino-derecha {
+  transform: translateX(var(--nodo-camino-desplazamiento-x));
+}
+
+.nodo-camino-izquierda {
+  transform: translateX(calc(var(--nodo-camino-desplazamiento-x) * -1));
+}
+
+.nodo-camino {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: var(--nodo-camino-tamano);
+  height: var(--nodo-camino-tamano);
+  border-radius: var(--radius-full);
+  border: 0 solid transparent;
+  border-bottom-width: var(--nodo-camino-relieve);
+  color: var(--color-texto-sobre-color);
+  transition:
+    transform var(--motion-presionar) var(--motion-easing-estandar),
+    border-bottom-width var(--motion-presionar) var(--motion-easing-estandar);
+}
+
+.nodo-camino:disabled {
+  cursor: default;
+}
+
+.nodo-camino:active:not(:disabled) {
+  transform: translateY(var(--nodo-camino-relieve));
+  border-bottom-width: 0;
+}
+
+
+.nodo-camino-estado-completado {
+  background-color: var(--nodo-camino-completado-fondo);
+  border-bottom-color: var(--nodo-camino-completado-relieve);
+}
+
+.nodo-camino-estado-actual {
+  background-color: var(--nodo-camino-actual-fondo);
+  border-bottom-color: var(--nodo-camino-actual-relieve);
+}
+
+.nodo-camino-estado-bloqueado {
+  background-color: var(--nodo-camino-bloqueado-fondo);
+  border-bottom-color: var(--nodo-camino-bloqueado-relieve);
+  color: var(--nodo-camino-bloqueado-icono);
+}
+
+.nodo-camino-estado-simulacro {
+  width: var(--nodo-camino-tamano-simulacro);
+  height: var(--nodo-camino-tamano-simulacro);
+  background-color: var(--nodo-camino-simulacro-fondo);
+  border-bottom-color: var(--nodo-camino-simulacro-relieve);
+  color: var(--color-logro-texto);
+}
+
+/* Halo del nodo disponible. Solo escala y opacidad, para degradar a nada
+   cuando el sistema pide reducir movimiento. */
+.nodo-camino-anillo {
+  position: absolute;
+  inset: calc(var(--space-2) * -1);
+  border-radius: var(--radius-full);
+  border: var(--border-width-relieve) solid var(--nodo-camino-actual-anillo);
+  animation: nodo-camino-latido 2s var(--motion-easing-estandar) infinite;
+}
+
+@keyframes nodo-camino-latido {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.08);
+    opacity: 0.4;
+  }
+}
+
+.nodo-camino-etiqueta {
+  font: var(--typography-etiqueta);
+  color: var(--color-texto-secundario);
+  text-align: center;
+}

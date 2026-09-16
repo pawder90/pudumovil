@@ -1,0 +1,7 @@
+.pudumovil {
+  height: auto;
+}
+
+.pudumovil-reflejado {
+  transform: scaleX(-1);
+}

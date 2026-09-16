@@ -1,0 +1,102 @@
+.hoja-feedback {
+  position: fixed;
+  inset: auto 0 0;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  max-height: var(--hoja-feedback-alto-max);
+  padding: var(--hoja-feedback-padding);
+  padding-bottom: calc(var(--hoja-feedback-padding) + env(safe-area-inset-bottom));
+  border-radius: var(--hoja-feedback-radio) var(--hoja-feedback-radio) 0 0;
+  transform: translateY(100%);
+  visibility: hidden;
+  transition:
+    transform var(--motion-hoja) var(--motion-easing-salida),
+    visibility var(--motion-hoja) var(--motion-easing-salida);
+}
+
+.hoja-feedback-abierta {
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.hoja-feedback-correcto {
+  background-color: var(--color-correcto-fondo);
+  color: var(--color-correcto-texto);
+}
+
+.hoja-feedback-incorrecto {
+  background-color: var(--color-error-fondo);
+  color: var(--color-error-texto);
+}
+
+.hoja-feedback-asa {
+  width: var(--space-8);
+  height: var(--space-1);
+  margin: 0 auto var(--space-3);
+  border-radius: var(--radius-full);
+  background-color: currentcolor;
+  opacity: 0.35;
+}
+
+/* Solo el contenido se desplaza. El pie nunca se mueve. */
+.hoja-feedback-contenido {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  min-height: 0;
+  overflow: hidden;
+}
+
+.hoja-feedback-expandida .hoja-feedback-contenido {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.hoja-feedback-veredicto {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font: var(--typography-subtitulo);
+}
+
+.hoja-feedback-titulo {
+  font: var(--typography-enunciado);
+  color: var(--color-texto-primario);
+}
+
+.hoja-feedback-explicacion {
+  font: var(--typography-cuerpo);
+  color: var(--color-texto-primario);
+}
+
+.hoja-feedback:not(.hoja-feedback-expandida) .hoja-feedback-explicacion {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--hoja-feedback-lineas-colapsada);
+  line-clamp: var(--hoja-feedback-lineas-colapsada);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.hoja-feedback-referencia {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+  font: var(--typography-etiqueta);
+  color: var(--color-texto-secundario);
+}
+
+/* La referencia al libro solo aparece con la explicación completa a la vista. */
+.hoja-feedback:not(.hoja-feedback-expandida) .hoja-feedback-referencia {
+  display: none;
+}
+
+
+.hoja-feedback-pie {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding-top: var(--space-4);
+}
