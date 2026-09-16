@@ -1,0 +1,296 @@
+{
+  "color": {
+    "fondo": {
+      "app": {
+        "$value": "{color.asfalto.50}",
+        "$type": "color"
+      },
+      "superficie": {
+        "$value": "{color.asfalto.0}",
+        "$type": "color"
+      },
+      "celebracion": {
+        "$value": "{color.crema.50}",
+        "$type": "color"
+      },
+      "sutil": {
+        "$value": "{color.asfalto.100}",
+        "$type": "color"
+      }
+    },
+    "texto": {
+      "primario": {
+        "$value": "{color.asfalto.900}",
+        "$type": "color"
+      },
+      "secundario": {
+        "$value": "{color.asfalto.600}",
+        "$type": "color"
+      },
+      "deshabilitado": {
+        "$value": "{color.asfalto.400}",
+        "$type": "color"
+      },
+      "sobre-color": {
+        "$value": "{color.asfalto.0}",
+        "$type": "color"
+      },
+      "sobre-logro": {
+        "$value": "{color.asfalto.900}",
+        "$type": "color"
+      },
+      "personaje": {
+        "$value": "{color.pudu.700}",
+        "$type": "color"
+      }
+    },
+    "borde": {
+      "default": {
+        "$value": "{color.asfalto.200}",
+        "$type": "color"
+      },
+      "fuerte": {
+        "$value": "{color.asfalto.300}",
+        "$type": "color"
+      },
+      "foco": {
+        "$value": "{color.cielo.500}",
+        "$type": "color"
+      }
+    },
+    "marca": {
+      "solido": {
+        "$value": "{color.musgo.600}",
+        "$type": "color",
+        "$description": "Fondo de botón con texto blanco (4,6:1)."
+      },
+      "relieve": {
+        "$value": "{color.musgo.700}",
+        "$type": "color"
+      },
+      "decorativo": {
+        "$value": "{color.musgo.500}",
+        "$type": "color",
+        "$description": "Sin texto blanco pequeño encima."
+      }
+    },
+    "correcto": {
+      "fondo": {
+        "$value": "{color.musgo.50}",
+        "$type": "color"
+      },
+      "texto": {
+        "$value": "{color.musgo.700}",
+        "$type": "color"
+      },
+      "solido": {
+        "$value": "{color.musgo.600}",
+        "$type": "color"
+      },
+      "relieve": {
+        "$value": "{color.musgo.700}",
+        "$type": "color"
+      }
+    },
+    "error": {
+      "fondo": {
+        "$value": "{color.copihue.50}",
+        "$type": "color"
+      },
+      "texto": {
+        "$value": "{color.copihue.700}",
+        "$type": "color"
+      },
+      "solido": {
+        "$value": "{color.copihue.600}",
+        "$type": "color"
+      },
+      "relieve": {
+        "$value": "{color.copihue.700}",
+        "$type": "color"
+      }
+    },
+    "info": {
+      "fondo": {
+        "$value": "{color.cielo.50}",
+        "$type": "color"
+      },
+      "texto": {
+        "$value": "{color.cielo.700}",
+        "$type": "color"
+      },
+      "solido": {
+        "$value": "{color.cielo.600}",
+        "$type": "color"
+      },
+      "borde": {
+        "$value": "{color.cielo.500}",
+        "$type": "color"
+      }
+    },
+    "logro": {
+      "solido": {
+        "$value": "{color.demarcacion.400}",
+        "$type": "color"
+      },
+      "relieve": {
+        "$value": "{color.demarcacion.600}",
+        "$type": "color"
+      },
+      "texto": {
+        "$value": "{color.asfalto.900}",
+        "$type": "color"
+      }
+    },
+    "progreso": {
+      "pista": {
+        "$value": "{color.asfalto.200}",
+        "$type": "color"
+      },
+      "relleno": {
+        "$value": "{color.musgo.500}",
+        "$type": "color"
+      },
+      "listo": {
+        "$value": "{color.demarcacion.400}",
+        "$type": "color"
+      }
+    },
+    "escena": {
+      "calzada": {
+        "$value": "{color.asfalto.700}",
+        "$type": "color"
+      },
+      "demarcacion-blanca": {
+        "$value": "{color.asfalto.0}",
+        "$type": "color"
+      },
+      "demarcacion-amarilla": {
+        "$value": "{color.demarcacion.400}",
+        "$type": "color"
+      },
+      "vereda": {
+        "$value": "{color.asfalto.50}",
+        "$type": "color"
+      },
+      "area-verde": {
+        "$value": "{color.musgo.100}",
+        "$type": "color"
+      },
+      "auto-tu": {
+        "$value": "{color.musgo.500}",
+        "$type": "color"
+      },
+      "vehiculo-otro-1": {
+        "$value": "{color.asfalto.300}",
+        "$type": "color"
+      },
+      "vehiculo-otro-2": {
+        "$value": "{color.pudu.200}",
+        "$type": "color"
+      },
+      "vehiculo-otro-3": {
+        "$value": "{color.cielo.100}",
+        "$type": "color"
+      },
+      "contorno": {
+        "$value": "{color.asfalto.900}",
+        "$type": "color"
+      },
+      "flecha": {
+        "$value": "{color.asfalto.900}",
+        "$type": "color"
+      }
+    }
+  },
+  "typography": {
+    "celebracion": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.display}",
+        "fontWeight": "{font.weight.bold}",
+        "fontSize": "{font.size.32}",
+        "lineHeight": "{font.line-height.tight}"
+      },
+      "$description": "Puntajes y celebraciones."
+    },
+    "titulo": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.display}",
+        "fontWeight": "{font.weight.bold}",
+        "fontSize": "{font.size.24}",
+        "lineHeight": "{font.line-height.snug}"
+      },
+      "$description": "Título de pantalla. Máx. 2 líneas."
+    },
+    "subtitulo": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.display}",
+        "fontWeight": "{font.weight.semibold}",
+        "fontSize": "{font.size.20}",
+        "lineHeight": "{font.line-height.snug}"
+      },
+      "$description": "Título de sección. Máx. 2 líneas."
+    },
+    "enunciado": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.texto}",
+        "fontWeight": "{font.weight.bold}",
+        "fontSize": "{font.size.20}",
+        "lineHeight": "{font.line-height.normal}"
+      },
+      "$description": "Enunciado de pregunta."
+    },
+    "cuerpo": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.texto}",
+        "fontWeight": "{font.weight.medium}",
+        "fontSize": "{font.size.17}",
+        "lineHeight": "{font.line-height.relaxed}"
+      },
+      "$description": "Explicaciones y cuerpo."
+    },
+    "boton": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.texto}",
+        "fontWeight": "{font.weight.extrabold}",
+        "fontSize": "{font.size.16}",
+        "lineHeight": "{font.line-height.snug}"
+      },
+      "$description": "Botones, en minúscula con mayúscula inicial."
+    },
+    "etiqueta": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.texto}",
+        "fontWeight": "{font.weight.semibold}",
+        "fontSize": "{font.size.14}",
+        "lineHeight": "{font.line-height.normal}"
+      },
+      "$description": "Etiquetas, ayudas y referencias."
+    }
+  },
+  "motion": {
+    "presionar": {
+      "$value": "{duration.instantaneo}",
+      "$type": "duration"
+    },
+    "transicion": {
+      "$value": "{duration.base}",
+      "$type": "duration"
+    },
+    "hoja": {
+      "$value": "{duration.lento}",
+      "$type": "duration"
+    },
+    "celebracion": {
+      "$value": "{duration.celebracion}",
+      "$type": "duration"
+    }
+  }
+}

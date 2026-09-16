@@ -1,0 +1,306 @@
+{
+  "boton": {
+    "alto": {
+      "$value": "52px",
+      "$type": "dimension"
+    },
+    "radio": {
+      "$value": "{radius.lg}",
+      "$type": "dimension"
+    },
+    "relieve": {
+      "$value": "{border-width.relieve}",
+      "$type": "dimension"
+    },
+    "padding-x": {
+      "$value": "{space.6}",
+      "$type": "dimension"
+    },
+    "primario": {
+      "fondo": {
+        "$value": "{color.marca.solido}",
+        "$type": "color"
+      },
+      "texto": {
+        "$value": "{color.texto.sobre-color}",
+        "$type": "color"
+      },
+      "relieve": {
+        "$value": "{color.marca.relieve}",
+        "$type": "color"
+      }
+    },
+    "secundario": {
+      "fondo": {
+        "$value": "{color.fondo.superficie}",
+        "$type": "color"
+      },
+      "texto": {
+        "$value": "{color.texto.primario}",
+        "$type": "color"
+      },
+      "relieve": {
+        "$value": "{color.borde.default}",
+        "$type": "color"
+      },
+      "borde": {
+        "$value": "{color.borde.default}",
+        "$type": "color"
+      }
+    },
+    "error": {
+      "fondo": {
+        "$value": "{color.error.solido}",
+        "$type": "color"
+      },
+      "texto": {
+        "$value": "{color.texto.sobre-color}",
+        "$type": "color"
+      },
+      "relieve": {
+        "$value": "{color.error.relieve}",
+        "$type": "color"
+      }
+    },
+    "logro": {
+      "fondo": {
+        "$value": "{color.logro.solido}",
+        "$type": "color"
+      },
+      "texto": {
+        "$value": "{color.texto.sobre-logro}",
+        "$type": "color"
+      },
+      "relieve": {
+        "$value": "{color.logro.relieve}",
+        "$type": "color"
+      }
+    }
+  },
+  "alternativa": {
+    "radio": {
+      "$value": "{radius.lg}",
+      "$type": "dimension"
+    },
+    "borde": {
+      "$value": "{border-width.fino}",
+      "$type": "dimension"
+    },
+    "relieve": {
+      "$value": "{border-width.relieve}",
+      "$type": "dimension"
+    },
+    "alto-min": {
+      "$value": "56px",
+      "$type": "dimension"
+    },
+    "reposo": {
+      "fondo": {
+        "$value": "{color.fondo.superficie}",
+        "$type": "color"
+      },
+      "borde": {
+        "$value": "{color.borde.default}",
+        "$type": "color"
+      },
+      "texto": {
+        "$value": "{color.texto.primario}",
+        "$type": "color"
+      }
+    },
+    "seleccionada": {
+      "fondo": {
+        "$value": "{color.info.fondo}",
+        "$type": "color"
+      },
+      "borde": {
+        "$value": "{color.info.borde}",
+        "$type": "color"
+      },
+      "texto": {
+        "$value": "{color.info.texto}",
+        "$type": "color"
+      }
+    },
+    "correcta": {
+      "fondo": {
+        "$value": "{color.correcto.fondo}",
+        "$type": "color"
+      },
+      "borde": {
+        "$value": "{color.correcto.solido}",
+        "$type": "color"
+      },
+      "texto": {
+        "$value": "{color.correcto.texto}",
+        "$type": "color"
+      }
+    },
+    "incorrecta": {
+      "fondo": {
+        "$value": "{color.error.fondo}",
+        "$type": "color"
+      },
+      "borde": {
+        "$value": "{color.error.solido}",
+        "$type": "color"
+      },
+      "texto": {
+        "$value": "{color.error.texto}",
+        "$type": "color"
+      }
+    }
+  },
+  "hoja-feedback": {
+    "radio": {
+      "$value": "{radius.xl}",
+      "$type": "dimension"
+    },
+    "alto-max": {
+      "$value": "85vh",
+      "$type": "dimension"
+    },
+    "padding": {
+      "$value": "{space.4}",
+      "$type": "dimension"
+    },
+    "lineas-colapsada": {
+      "$value": 2,
+      "$type": "number"
+    }
+  },
+  "nodo-camino": {
+    "tamano": {
+      "$value": "72px",
+      "$type": "dimension"
+    },
+    "tamano-simulacro": {
+      "$value": "88px",
+      "$type": "dimension"
+    },
+    "relieve": {
+      "$value": "{border-width.relieve}",
+      "$type": "dimension"
+    },
+    "desplazamiento-x": {
+      "$value": "56px",
+      "$type": "dimension"
+    },
+    "completado": {
+      "fondo": {
+        "$value": "{color.marca.solido}",
+        "$type": "color"
+      },
+      "relieve": {
+        "$value": "{color.marca.relieve}",
+        "$type": "color"
+      }
+    },
+    "actual": {
+      "fondo": {
+        "$value": "{color.marca.solido}",
+        "$type": "color"
+      },
+      "relieve": {
+        "$value": "{color.marca.relieve}",
+        "$type": "color"
+      },
+      "anillo": {
+        "$value": "{color.musgo.200}",
+        "$type": "color"
+      }
+    },
+    "bloqueado": {
+      "fondo": {
+        "$value": "{color.borde.default}",
+        "$type": "color"
+      },
+      "relieve": {
+        "$value": "{color.borde.fuerte}",
+        "$type": "color"
+      },
+      "icono": {
+        "$value": "{color.texto.deshabilitado}",
+        "$type": "color"
+      }
+    },
+    "simulacro": {
+      "fondo": {
+        "$value": "{color.logro.solido}",
+        "$type": "color"
+      },
+      "relieve": {
+        "$value": "{color.logro.relieve}",
+        "$type": "color"
+      }
+    }
+  },
+  "barra-nav": {
+    "alto": {
+      "$value": "64px",
+      "$type": "dimension"
+    },
+    "activo": {
+      "$value": "{color.marca.solido}",
+      "$type": "color"
+    },
+    "inactivo": {
+      "$value": "{color.texto.secundario}",
+      "$type": "color"
+    },
+    "fondo": {
+      "$value": "{color.fondo.superficie}",
+      "$type": "color"
+    },
+    "borde": {
+      "$value": "{color.borde.default}",
+      "$type": "color"
+    }
+  },
+  "barra-preparacion": {
+    "alto": {
+      "$value": "16px",
+      "$type": "dimension"
+    },
+    "radio": {
+      "$value": "{radius.full}",
+      "$type": "dimension"
+    },
+    "pista": {
+      "$value": "{color.progreso.pista}",
+      "$type": "color"
+    },
+    "relleno": {
+      "$value": "{color.progreso.relleno}",
+      "$type": "color"
+    },
+    "listo": {
+      "$value": "{color.progreso.listo}",
+      "$type": "color"
+    }
+  },
+  "escenario-senal": {
+    "fondo": {
+      "$value": "{color.fondo.superficie}",
+      "$type": "color"
+    },
+    "borde": {
+      "$value": "{color.borde.default}",
+      "$type": "color"
+    },
+    "padding": {
+      "$value": "{space.6}",
+      "$type": "dimension"
+    },
+    "radio": {
+      "$value": "{radius.lg}",
+      "$type": "dimension"
+    }
+  },
+  "toque": {
+    "minimo": {
+      "$value": "48px",
+      "$type": "dimension"
+    }
+  }
+}
