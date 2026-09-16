@@ -1,0 +1,512 @@
+[
+  {
+    "id": "n1-u1-mec-001",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "seleccion_multiple",
+    "dificultad": 1,
+    "temaExamen": null,
+    "enunciado": "Se enciende en el panel de instrumentos la luz indicadora de la presión de aceite. ¿Qué debes hacer?",
+    "alternativas": [
+      { "id": "a", "texto": "Detener el motor de inmediato y no ponerlo en marcha hasta haberlo reparado" },
+      { "id": "b", "texto": "Seguir conduciendo con precaución hasta llegar a destino" },
+      { "id": "c", "texto": "Agregar bencina al estanque" },
+      { "id": "d", "texto": "Subir el volumen de la radio para escuchar mejor el motor" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "Cuando se enciende la luz de presión de aceite, el motor no está siendo correctamente lubricado. Debes detener el motor de inmediato y no ponerlo en marcha hasta haberlo reparado, ya que puedes causarle averías graves.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El sistema de lubricación",
+      "pagina": 12,
+      "fragmento": "debes detener el motor de inmediato y no ponerlo en marcha hasta haberlo reparado"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-002",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "mito_o_realidad",
+    "dificultad": 1,
+    "temaExamen": null,
+    "enunciado": "Un ruido anormalmente alto en el tubo de escape puede ser señal de roturas u orificios en el silenciador.",
+    "respuestaCorrecta": true,
+    "explicacion": "Es verdadero. Un ruido anormalmente alto del tubo de escape suele ser una señal de roturas o de orificios en el silenciador.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El sistema de escape",
+      "pagina": 14,
+      "fragmento": "Un ruido anormalmente alto del tubo de escape suele ser una señal de roturas o de orificios en el silenciador"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-003",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "mito_o_realidad",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "Si el sistema ABS llega a fallar, los frenos del vehículo dejan de funcionar por completo.",
+    "respuestaCorrecta": false,
+    "explicacion": "Es falso. Si el ABS llegase a fallar, los frenos seguirán funcionando; lo que se pierde es la función antibloqueo, no el frenado.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Los frenos",
+      "pagina": 17,
+      "fragmento": "Si el ABS llegase a fallar, los frenos seguirán funcionando"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-004",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "completar_frase",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "Para que los neumáticos frenen y agarren bien, sus surcos deben tener una profundidad mínima aconsejable de ___.",
+    "alternativas": [
+      { "id": "a", "texto": "3 mm" },
+      { "id": "b", "texto": "1 cm" },
+      { "id": "c", "texto": "5 mm" },
+      { "id": "d", "texto": "8 mm" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "Los dibujos o surcos de la banda de rodamiento deben tener una profundidad aconsejable mínima de 3 mm. Bajo 1,6 mm empeora la fricción con el pavimento mojado.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Los neumáticos",
+      "pagina": 18,
+      "fragmento": "profundidad aconsejable mínima de 3 mm"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-005",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "seleccion_multiple",
+    "dificultad": 1,
+    "temaExamen": null,
+    "enunciado": "Según el libro, ¿cada cuánto tiempo como máximo deben cambiarse los neumáticos, aunque tengan poco uso?",
+    "alternativas": [
+      { "id": "a", "texto": "Cada 5 años" },
+      { "id": "b", "texto": "Cada 10 años" },
+      { "id": "c", "texto": "Cada 2 años" },
+      { "id": "d", "texto": "Nunca, si el dibujo está bien" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "Los neumáticos deben ser cambiados al menos cada 5 años. Aunque tengan poco uso y su dibujo esté bien, el material envejece y pierden sus propiedades para rodar con seguridad.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Los neumáticos",
+      "pagina": 19,
+      "fragmento": "Los neumáticos deben ser cambiados al menos cada 5 años"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-006",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "mito_o_realidad",
+    "dificultad": 1,
+    "temaExamen": null,
+    "enunciado": "Antes de poner el vehículo en movimiento, debes mirar a tu alrededor y chequear los puntos ciegos.",
+    "respuestaCorrecta": true,
+    "explicacion": "Es verdadero. Entre las cosas de las que siempre debes asegurarte está mirar a tu alrededor y chequear los puntos ciegos antes de poner tu vehículo en movimiento.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Siempre debes asegurarte de",
+      "pagina": 22,
+      "fragmento": "chequear los puntos ciegos antes de poner tu vehículo en movimiento"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-007",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "mito_o_realidad",
+    "dificultad": 1,
+    "temaExamen": null,
+    "enunciado": "Si el motor de tu vehículo no enciende al darle contacto, es muy probable que la batería esté descargada o desconectada.",
+    "respuestaCorrecta": true,
+    "explicacion": "Es verdadero. Cuando el motor no se enciende al darle contacto, es muy probable que la batería se encuentre descargada o desconectada.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El sistema eléctrico",
+      "pagina": 12,
+      "fragmento": "Cuando el motor de tu vehículo no se enciende al darle contacto es muy probable que la batería se encuentre descargada o desconectada"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-008",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "seleccion_multiple",
+    "dificultad": 1,
+    "temaExamen": null,
+    "enunciado": "Una unidad eléctrica del vehículo (por ejemplo, una luz) deja de funcionar de golpe. ¿Qué debes revisar primero?",
+    "alternativas": [
+      { "id": "a", "texto": "Si se ha fundido algún fusible" },
+      { "id": "b", "texto": "Si el motor tiene suficiente bencina" },
+      { "id": "c", "texto": "La presión de los neumáticos" },
+      { "id": "d", "texto": "El líquido refrigerante" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "Si alguna unidad eléctrica deja de funcionar, lo primero que debes revisar es si se ha fundido algún fusible.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El sistema eléctrico",
+      "pagina": 12,
+      "fragmento": "si alguna unidad eléctrica deja de funcionar, lo primero que debes revisar es si se ha fundido algún fusible"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-009",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "mito_o_realidad",
+    "dificultad": 1,
+    "temaExamen": null,
+    "enunciado": "Si al conducir sientes un fuerte olor a gasolina, puedes seguir manejando mientras no veas humo.",
+    "respuestaCorrecta": false,
+    "explicacion": "Es falso. Si al conducir sientes un fuerte olor a gasolina debes detenerte para investigar la causa del problema y prevenir el riesgo de incendio.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El sistema de combustible",
+      "pagina": 13,
+      "fragmento": "Si al conducir sientes un fuerte olor a gasolina debes detenerte"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-010",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "seleccion_multiple",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "Notas que la temperatura del motor se eleva por una obstrucción del sistema de refrigeración. ¿Qué debes hacer?",
+    "alternativas": [
+      { "id": "a", "texto": "Detener la marcha y reparar la avería" },
+      { "id": "b", "texto": "Subir la velocidad para que entre más aire" },
+      { "id": "c", "texto": "Apagar solo la calefacción y seguir conduciendo" },
+      { "id": "d", "texto": "Esperar a llegar a destino para revisar" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "Cuando hay una obstrucción del sistema de refrigeración y la temperatura del motor se eleva, debes detener la marcha y reparar la avería.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El sistema de refrigeración",
+      "pagina": 13,
+      "fragmento": "debes detener la marcha y reparar la avería"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-011",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "mito_o_realidad",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "Conducir presionando el pedal de embrague durante más tiempo del necesario mejora el control del vehículo.",
+    "respuestaCorrecta": false,
+    "explicacion": "Es falso. Al conducir presionando el embrague durante un tiempo mayor al necesario se reduce el control sobre el vehículo.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "La transmisión",
+      "pagina": 14,
+      "fragmento": "al conducir presionando el embrague durante un tiempo mayor al necesario se reduce el control sobre el vehículo"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-012",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "seleccion_multiple",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "¿Cuál de estas es una señal de que puede haber un defecto en la dirección o poca presión de aire en los neumáticos delanteros?",
+    "alternativas": [
+      { "id": "a", "texto": "Escuchar un chirrido excesivo al doblar" },
+      { "id": "b", "texto": "Que se enciendan las luces bajas" },
+      { "id": "c", "texto": "Que el estanque de bencina esté casi lleno" },
+      { "id": "d", "texto": "Que el aire acondicionado funcione más fuerte" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "Algunas señales de un defecto en la dirección o de poca presión en los neumáticos delanteros son sentir la dirección pesada o escuchar un chirrido excesivo al doblar.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "La dirección",
+      "pagina": 15,
+      "fragmento": "escuchar un chirrido excesivo al doblar"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-013",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "mito_o_realidad",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "Un amortiguador en mal estado puede aumentar la distancia de frenado, sobre todo con pavimento irregular o mojado.",
+    "respuestaCorrecta": true,
+    "explicacion": "Es verdadero. Un amortiguador en mal estado provoca aumento de la distancia de frenado, sobre todo con pavimento irregular o mojado; si el vehículo tiene frenos ABS, este sistema perderá efectividad.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "La suspensión y la amortiguación",
+      "pagina": 16,
+      "fragmento": "Aumento de la distancia de frenado, sobre todo con pavimento irregular o mojado"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-014",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "completar_frase",
+    "dificultad": 1,
+    "temaExamen": null,
+    "enunciado": "El freno de ___ (pedal de freno) generalmente es hidráulico y actúa sobre las cuatro ruedas.",
+    "alternativas": [
+      { "id": "a", "texto": "servicio" },
+      { "id": "b", "texto": "mano" },
+      { "id": "c", "texto": "motor" },
+      { "id": "d", "texto": "emergencia únicamente" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "El freno de servicio (pedal de freno) generalmente es hidráulico y actúa sobre las cuatro ruedas.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Los frenos",
+      "pagina": 16,
+      "fragmento": "El freno de servicio (pedal de freno) generalmente es hidráulico y actúa sobre las cuatro ruedas"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-015",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "seleccion_multiple",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "El sistema de servofrenos, que aumenta la fuerza de frenado, ¿cuándo funciona?",
+    "alternativas": [
+      { "id": "a", "texto": "Solo con el motor en marcha" },
+      { "id": "b", "texto": "Solo con el motor apagado" },
+      { "id": "c", "texto": "Solo de noche" },
+      { "id": "d", "texto": "Siempre, aunque el vehículo sea remolcado con el motor apagado" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "Esta tecnología funciona sólo con el motor en marcha. Por eso hay que tener cuidado al ser remolcado o si el motor se detiene en una bajada.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Los frenos",
+      "pagina": 16,
+      "fragmento": "Esta tecnología funciona sólo con el motor en marcha"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-016",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "seleccion_multiple",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "Una rueda delantera tiene la presión de aire demasiado baja. ¿Qué le pasa al vehículo?",
+    "alternativas": [
+      { "id": "a", "texto": "Tiende a torcer hacia ese lado" },
+      { "id": "b", "texto": "Se pierde por completo la adherencia de los cuatro neumáticos" },
+      { "id": "c", "texto": "Aumenta la velocidad máxima del vehículo" },
+      { "id": "d", "texto": "No cambia nada mientras la otra rueda delantera esté bien" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "Una baja presión de aire en una rueda delantera hace que el vehículo tienda a torcer hacia ese lado.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Los neumáticos",
+      "pagina": 18,
+      "fragmento": "Una baja presión de aire en una rueda delantera hace que el vehículo tienda a torcer hacia ese lado"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-017",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "seleccion_multiple",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "Se revienta un neumático trasero mientras conduces. ¿Qué debes hacer?",
+    "alternativas": [
+      { "id": "a", "texto": "Girar el volante hacia el lado en que se desvía la cola del vehículo" },
+      { "id": "b", "texto": "Frenar de golpe y soltar el volante" },
+      { "id": "c", "texto": "Acelerar para estabilizar el vehículo" },
+      { "id": "d", "texto": "Girar el volante hacia el lado contrario a la cola" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "Si se revienta un neumático trasero, debes girar el volante hacia el lado en que se desvía la cola del vehículo, y detenerte lentamente al costado de la vía.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Qué hacer en caso de reventar un neumático",
+      "pagina": 19,
+      "fragmento": "debes girar el volante hacia el lado en que se desvía la cola del vehículo"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-018",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "seleccion_multiple",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "Se revienta un neumático delantero mientras conduces. ¿Qué debes hacer?",
+    "alternativas": [
+      { "id": "a", "texto": "Frenar de forma suave sosteniendo el volante firmemente" },
+      { "id": "b", "texto": "Frenar de golpe" },
+      { "id": "c", "texto": "Acelerar y luego frenar bruscamente" },
+      { "id": "d", "texto": "Soltar el volante para que el vehículo se enderece solo" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "Si se revienta un neumático delantero, debes frenar de forma suave sosteniendo el volante firmemente, y detenerte lentamente al costado de la vía.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Qué hacer en caso de reventar un neumático",
+      "pagina": 19,
+      "fragmento": "debes frenar de forma suave sosteniendo el volante firmemente"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-019",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "completar_frase",
+    "dificultad": 1,
+    "temaExamen": null,
+    "enunciado": "En la parte delantera, todo vehículo debe tener ___ que proyecten luces altas y bajas.",
+    "alternativas": [
+      { "id": "a", "texto": "dos focos" },
+      { "id": "b", "texto": "un foco" },
+      { "id": "c", "texto": "tres focos" },
+      { "id": "d", "texto": "ningún foco, solo las de estacionamiento" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "La parte delantera del vehículo debe tener dos focos que proyecten luces altas y bajas, dos luces de estacionamiento y dos luces destellantes de viraje.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Las luces",
+      "pagina": 20,
+      "fragmento": "Dos focos que proyecten luces altas y bajas"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-020",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "mito_o_realidad",
+    "dificultad": 1,
+    "temaExamen": null,
+    "enunciado": "La parte trasera del vehículo debe tener una luz que ilumine la placa patente.",
+    "respuestaCorrecta": true,
+    "explicacion": "Es verdadero. En la parte trasera, el vehículo debe tener dos luces de estacionamiento, luces de viraje, de retroceso, luces rojas fijas, luces de freno y una luz que ilumine la placa patente.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Las luces",
+      "pagina": 20,
+      "fragmento": "una luz que ilumine la placa patente del vehículo"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-021",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "seleccion_multiple",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "¿Cuándo deben usarse las luces intermitentes de advertencia de peligro?",
+    "alternativas": [
+      { "id": "a", "texto": "Solo cuando el vehículo está detenido por una falla o avería" },
+      { "id": "b", "texto": "Siempre que llueve, incluso en marcha" },
+      { "id": "c", "texto": "Para poder estacionar en cualquier lugar sin problema" },
+      { "id": "d", "texto": "Solo de noche, aunque el vehículo esté en marcha" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "Las luces intermitentes de advertencia de peligro sólo deben utilizarse cuando el vehículo se encuentra detenido a consecuencia de una falla o avería, nunca como excusa para un estacionamiento peligroso o ilegal.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Las luces",
+      "pagina": 20,
+      "fragmento": "sólo deben utilizarse cuando el vehículo se encuentra detenido a consecuencia de una falla o avería"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-022",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "mito_o_realidad",
+    "dificultad": 1,
+    "temaExamen": null,
+    "enunciado": "Las luces neblineras se pueden dejar encendidas aunque ya haya mejorado la visibilidad.",
+    "respuestaCorrecta": false,
+    "explicacion": "Es falso. Las luces neblineras deben apagarse tan pronto mejore la visibilidad.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Las luces",
+      "pagina": 21,
+      "fragmento": "deben apagarse tan pronto mejore la visibilidad"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-023",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "mito_o_realidad",
+    "dificultad": 1,
+    "temaExamen": null,
+    "enunciado": "Los espejos laterales muestran los objetos exactamente del tamaño y a la distancia reales.",
+    "respuestaCorrecta": false,
+    "explicacion": "Es falso. La mayoría de los espejos laterales son convexos, por lo que las imágenes se visualizan más lejanas y/o más pequeñas de lo que están en la realidad.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Los espejos",
+      "pagina": 21,
+      "fragmento": "La mayoría de los espejos laterales son convexos"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-024",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "mito_o_realidad",
+    "dificultad": 1,
+    "temaExamen": null,
+    "enunciado": "Aunque tus espejos estén muy bien regulados, siempre existirá una zona sobre la cual no tendrás visión.",
+    "respuestaCorrecta": true,
+    "explicacion": "Es verdadero. Esos sectores se llaman puntos ciegos o ángulos muertos.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Los espejos",
+      "pagina": 21,
+      "fragmento": "Ten presente que aun cuando tus espejos estén muy bien regulados, al conducir siempre existirá una zona"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  }
+]

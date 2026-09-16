@@ -1,0 +1,344 @@
+[
+  {
+    "id": "n1-u4-sen-001",
+    "nivel": 1,
+    "unidad": "senales-de-transito-basicas",
+    "tipo": "seleccion_multiple",
+    "dificultad": 1,
+    "temaExamen": null,
+    "enunciado": "¿Qué informan las señales reglamentarias de tránsito?",
+    "alternativas": [
+      { "id": "a", "texto": "Prioridades, prohibiciones, restricciones, obligaciones y autorizaciones" },
+      { "id": "b", "texto": "Solo la ubicación de servicios turísticos" },
+      { "id": "c", "texto": "Únicamente advertencias de peligro" },
+      { "id": "d", "texto": "Solo el límite de velocidad" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "Las señales reglamentarias notifican a las personas usuarias de la vía acerca de prioridades, prohibiciones, restricciones, obligaciones y autorizaciones.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Señales verticales",
+      "pagina": 80,
+      "fragmento": "prioridades, prohibiciones, restricciones, obligaciones y autorizaciones"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u4-sen-002",
+    "nivel": 1,
+    "unidad": "senales-de-transito-basicas",
+    "tipo": "completar_frase",
+    "dificultad": 1,
+    "temaExamen": null,
+    "enunciado": "Las señales de advertencia de peligro tienen forma de rombo, fondo de color ___ y símbolo negro (excepto la Cruz de San Andrés).",
+    "alternativas": [
+      { "id": "a", "texto": "amarillo" },
+      { "id": "b", "texto": "rojo" },
+      { "id": "c", "texto": "azul" },
+      { "id": "d", "texto": "verde" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "Las señales de advertencia de peligro tienen forma de rombo, su color de fondo es amarillo y su símbolo es negro. Se exceptúa la Cruz de San Andrés.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Señales verticales",
+      "pagina": 81,
+      "fragmento": "forma de rombo, su color de fondo es amarillo y su símbolo es negro"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u4-sen-003",
+    "nivel": 1,
+    "unidad": "senales-de-transito-basicas",
+    "tipo": "seleccion_multiple",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "¿De qué color son generalmente las señales informativas en autopistas y autovías?",
+    "alternativas": [
+      { "id": "a", "texto": "Azul" },
+      { "id": "b", "texto": "Amarillo" },
+      { "id": "c", "texto": "Rojo" },
+      { "id": "d", "texto": "Café" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "Las señales informativas son, en general, de color azul en el caso de Autopistas y Autovías y de color verde en otro tipo de vía.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Señales verticales",
+      "pagina": 81,
+      "fragmento": "de color azul en el caso de Autopistas y Autovías y de color verde en otro tipo de vía"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u4-sen-004",
+    "nivel": 1,
+    "unidad": "senales-de-transito-basicas",
+    "tipo": "mito_o_realidad",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "Las señales transitorias, que responden a trabajos en la vía, son generalmente de color naranja.",
+    "respuestaCorrecta": true,
+    "explicacion": "Es verdadero. Las señales transitorias son de color naranja, con la excepción de la primera señal que advierte sobre los trabajos, la que es de color amarillo.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Señales verticales",
+      "pagina": 81,
+      "fragmento": "Son de color naranja, con la excepción de la primera señal que advierte sobre los trabajos, la que es de color amarillo"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u4-sen-005",
+    "nivel": 1,
+    "unidad": "senales-de-transito-basicas",
+    "tipo": "mito_o_realidad",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "Se permite circular por la berma (línea de borde de calzada) cuando el tránsito está congestionado, para avanzar más rápido.",
+    "respuestaCorrecta": false,
+    "explicacion": "Es falso. No debes circular por esta franja de seguridad lateral; solo en áreas rurales y en caso de emergencia se puede traspasar esta línea para permanecer en la berma.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Demarcaciones de pistas, de centro y bordes de calzada",
+      "pagina": 82,
+      "fragmento": "No debes circular por esta franja de seguridad lateral"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u4-sen-006",
+    "nivel": 1,
+    "unidad": "senales-de-transito-basicas",
+    "tipo": "seleccion_multiple",
+    "dificultad": 1,
+    "temaExamen": null,
+    "enunciado": "En un paso de cebra sin semáforo, ¿quién tiene la prioridad?",
+    "alternativas": [
+      { "id": "a", "texto": "Las y los peatones" },
+      { "id": "b", "texto": "El primer vehículo que llega" },
+      { "id": "c", "texto": "Los vehículos que vienen por la derecha" },
+      { "id": "d", "texto": "Nadie tiene prioridad" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "En un paso de cebra, las y los peatones tienen prioridad.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Demarcaciones de pistas, de centro y bordes de calzada",
+      "pagina": 83,
+      "fragmento": "En un paso de cebra, las y los peatones tienen prioridad"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u4-sen-007",
+    "nivel": 1,
+    "unidad": "senales-de-transito-basicas",
+    "tipo": "seleccion_multiple",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "La mayoría de las señales reglamentarias son circulares o rectangulares. ¿Cuáles son la excepción?",
+    "alternativas": [
+      { "id": "a", "texto": "PARE, Ceda el Paso, Fin Restricción, Paso Obligado, entre otras" },
+      { "id": "b", "texto": "Ninguna, todas tienen exactamente la misma forma" },
+      { "id": "c", "texto": "Solo las señales de autopistas" },
+      { "id": "d", "texto": "Las señales de estacionamiento" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "Se exceptúan de la forma circular o rectangular las señales PARE, Ceda el Paso, Fin Restricción, Paso Obligado, Permitido Virar Derecha con Luz Roja, Sólo Bicicletas, entre otras.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Señales verticales",
+      "pagina": 80,
+      "fragmento": "Se exceptúan de lo anterior las señales PARE, Ceda el Paso, Fin Restricción, Paso Obligado, Permitido Virar Derecha con Luz Roja, Sólo Bicicletas"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u4-sen-008",
+    "nivel": 1,
+    "unidad": "senales-de-transito-basicas",
+    "tipo": "seleccion_multiple",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "¿Qué hace la señal FIN RESTRICCIÓN?",
+    "alternativas": [
+      { "id": "a", "texto": "Pone término a la restricción mostrada al interior del círculo" },
+      { "id": "b", "texto": "Indica el inicio de una nueva zona de restricción vehicular" },
+      { "id": "c", "texto": "Anuncia un peaje más adelante" },
+      { "id": "d", "texto": "Marca el límite de velocidad máxima" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "La señal FIN RESTRICCIÓN pone término a la restricción mostrada al interior del círculo (por ejemplo, \"No adelantar\").",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Señales verticales",
+      "pagina": 80,
+      "fragmento": "la señal FIN RESTRICCIÓN pone término a la restricción mostrada al interior del círculo"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u4-sen-009",
+    "nivel": 1,
+    "unidad": "senales-de-transito-basicas",
+    "tipo": "mito_o_realidad",
+    "dificultad": 1,
+    "temaExamen": null,
+    "enunciado": "Después de pasar una señal de advertencia de peligro, debes evitar los adelantamientos y tomar precauciones.",
+    "respuestaCorrecta": true,
+    "explicacion": "Es verdadero. Dado que estas señales advierten un peligro, debes evitar los adelantamientos una vez pasada la señal y tomar las precauciones del caso.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Señales verticales",
+      "pagina": 81,
+      "fragmento": "debes evitar los adelantamientos una vez pasada la señal"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u4-sen-010",
+    "nivel": 1,
+    "unidad": "senales-de-transito-basicas",
+    "tipo": "mito_o_realidad",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "Las señales informativas sobre atractivos turísticos siempre son de color azul.",
+    "respuestaCorrecta": false,
+    "explicacion": "Es falso. Aunque las señales informativas suelen ser azules o verdes, las que informan sobre atractivos turísticos también pueden ser de color café.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Señales verticales",
+      "pagina": 81,
+      "fragmento": "las que informan sobre atractivos turísticos también pueden ser de color café"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u4-sen-011",
+    "nivel": 1,
+    "unidad": "senales-de-transito-basicas",
+    "tipo": "mito_o_realidad",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "Puedes cambiar de pista cruzando una línea longitudinal discontinua, si avisas antes y no impones riesgo a las demás personas.",
+    "respuestaCorrecta": true,
+    "explicacion": "Es verdadero. Puedes traspasar estas líneas y cambiar de pista advirtiendo previamente tu intención, siempre que ello no imponga riesgos a las demás personas.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Demarcaciones de pistas, de centro y bordes de calzada",
+      "pagina": 82,
+      "fragmento": "Puedes traspasar estas líneas y cambiar de pista advirtiendo previamente"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u4-sen-012",
+    "nivel": 1,
+    "unidad": "senales-de-transito-basicas",
+    "tipo": "seleccion_multiple",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "¿Qué indica una línea longitudinal continua en la calzada?",
+    "alternativas": [
+      { "id": "a", "texto": "Que no existen condiciones de seguridad para que pueda ser traspasada" },
+      { "id": "b", "texto": "Que puedes cambiar de pista libremente" },
+      { "id": "c", "texto": "Que estás entrando a una zona de estacionamiento" },
+      { "id": "d", "texto": "Que se acerca un cruce ferroviario" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "Las líneas longitudinales continuas indican que no existen condiciones de seguridad para que pueda ser traspasada, como insuficiente visibilidad antes de una curva o ante un cambio de rasante.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Demarcaciones de pistas, de centro y bordes de calzada",
+      "pagina": 82,
+      "fragmento": "indican que no existen condiciones de seguridad para que pueda ser traspasada"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u4-sen-013",
+    "nivel": 1,
+    "unidad": "senales-de-transito-basicas",
+    "tipo": "seleccion_multiple",
+    "dificultad": 3,
+    "temaExamen": null,
+    "enunciado": "En una línea mixta (segmentada de un lado, continua del otro), ¿quién puede traspasarla?",
+    "alternativas": [
+      { "id": "a", "texto": "Solo los vehículos que circulan por el lado en que es segmentada" },
+      { "id": "b", "texto": "Cualquier vehículo, desde cualquier lado" },
+      { "id": "c", "texto": "Solo los vehículos de emergencia" },
+      { "id": "d", "texto": "Nadie puede traspasarla" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "En una línea longitudinal en forma mixta, sólo puede ser traspasada por los vehículos que circulan por el lado en que esta es segmentada.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Demarcaciones de pistas, de centro y bordes de calzada",
+      "pagina": 82,
+      "fragmento": "sólo puede ser traspasada por los vehículos que circulan por el lado en que esta es segmentada"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u4-sen-014",
+    "nivel": 1,
+    "unidad": "senales-de-transito-basicas",
+    "tipo": "mito_o_realidad",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "En caminos de montaña con nieve frecuente, la demarcación del eje central y del borde de calzada puede ser de color amarillo.",
+    "respuestaCorrecta": true,
+    "explicacion": "Es verdadero. En caminos de montaña donde la nieve es frecuente, tanto la demarcación del eje central como la de borde de calzada pueden ser de color amarillo.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Demarcaciones de pistas, de centro y bordes de calzada",
+      "pagina": 82,
+      "fragmento": "tanto la demarcación del eje central como la de borde de calzada pueden ser de color amarillo"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u4-sen-015",
+    "nivel": 1,
+    "unidad": "senales-de-transito-basicas",
+    "tipo": "seleccion_multiple",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "En áreas urbanas, ¿qué significa una franja amarilla continua junto a la calzada o en la solera?",
+    "alternativas": [
+      { "id": "a", "texto": "Prohibición de estacionar a lo largo de esta" },
+      { "id": "b", "texto": "Zona exclusiva para bicicletas" },
+      { "id": "c", "texto": "Zona de carga y descarga permitida" },
+      { "id": "d", "texto": "Preferencia para peatones" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "En áreas urbanas suele demarcarse al borde de la calzada una franja amarilla continua, con el propósito de señalar la prohibición de estacionar a lo largo de esta.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Demarcaciones de pistas, de centro y bordes de calzada",
+      "pagina": 82,
+      "fragmento": "señalar la prohibición de estacionar a lo largo de esta"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u4-sen-016",
+    "nivel": 1,
+    "unidad": "senales-de-transito-basicas",
+    "tipo": "mito_o_realidad",
+    "dificultad": 3,
+    "temaExamen": null,
+    "enunciado": "En una demarcación de \"no bloquear cruce\", puedes cruzar aunque no haya espacio suficiente en la salida, si tienes prioridad.",
+    "respuestaCorrecta": false,
+    "explicacion": "Es falso. Solo puedes cruzar cuando en la salida del cruce exista espacio suficiente para no quedar detenido en él, sin importar la prioridad.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Demarcación de no bloquear cruce",
+      "pagina": 83,
+      "fragmento": "Las personas que enfrenten esta demarcación sólo pueden cruzar cuando en la salida del cruce exista espacio suficiente para no quedar detenido en él"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  }
+]

@@ -1,0 +1,404 @@
+[
+  {
+    "id": "n1-u2-seg-001",
+    "nivel": 1,
+    "unidad": "elementos-de-seguridad",
+    "tipo": "mito_o_realidad",
+    "dificultad": 1,
+    "temaExamen": null,
+    "enunciado": "Está permitido que dos personas viajen sujetas con un mismo cinturón de seguridad si el trayecto es corto.",
+    "respuestaCorrecta": false,
+    "explicacion": "Es falso. Nunca permitas que dos personas viajen sujetas con un mismo cinturón; cada persona debe ir bien sujeta con su propio cinturón, incluso en los asientos traseros.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El cinturón de seguridad",
+      "pagina": 26,
+      "fragmento": "Nunca permitas que dos personas viajen sujetas con un mismo cinturón"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u2-seg-002",
+    "nivel": 1,
+    "unidad": "elementos-de-seguridad",
+    "tipo": "seleccion_multiple",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "¿Desde qué año de fabricación del vehículo es obligatorio el uso del cinturón de seguridad en los asientos traseros?",
+    "alternativas": [
+      { "id": "a", "texto": "2002 o posterior" },
+      { "id": "b", "texto": "2010 o posterior" },
+      { "id": "c", "texto": "1995 o posterior" },
+      { "id": "d", "texto": "Solo en vehículos nuevos, sin fecha definida" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "El uso del cinturón de seguridad en los asientos traseros es obligatorio sólo si el vehículo tiene un año de fabricación 2002 o posterior.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El cinturón de seguridad",
+      "pagina": 26,
+      "fragmento": "es obligatorio sólo si el vehículo tiene un año de fabricación 2002 o posterior"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u2-seg-003",
+    "nivel": 1,
+    "unidad": "elementos-de-seguridad",
+    "tipo": "seleccion_multiple",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "Según los estudios citados en el libro, ¿qué riesgo enfrentan las personas que no usan el cinturón de seguridad en un siniestro?",
+    "alternativas": [
+      { "id": "a", "texto": "El doble de probabilidad de fallecer" },
+      { "id": "b", "texto": "La misma probabilidad que quienes sí lo usan" },
+      { "id": "c", "texto": "Menor probabilidad de sufrir lesiones" },
+      { "id": "d", "texto": "Ninguna diferencia relevante" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "El estudio de miles de siniestros demuestra que las personas que no usan el cinturón tienen el doble de probabilidad de fallecer en ellos.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El cinturón de seguridad",
+      "pagina": 28,
+      "fragmento": "tienen el doble de probabilidad de fallecer"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u2-seg-004",
+    "nivel": 1,
+    "unidad": "elementos-de-seguridad",
+    "tipo": "mito_o_realidad",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "El airbag protege igual de bien aunque no lleves puesto el cinturón de seguridad.",
+    "respuestaCorrecta": false,
+    "explicacion": "Es falso. El airbag no es eficaz si no se utiliza junto con el cinturón de seguridad; si el cinturón no retiene a la persona, el airbag puede provocarle graves lesiones al desplegarse.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El airbag",
+      "pagina": 30,
+      "fragmento": "El airbag no es eficaz si no se utiliza junto con el cinturón de seguridad"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u2-seg-005",
+    "nivel": 1,
+    "unidad": "elementos-de-seguridad",
+    "tipo": "completar_frase",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "Usar el airbag frontal junto con el cinturón de seguridad puede reducir hasta un ___ la probabilidad de sufrir lesiones mortales.",
+    "alternativas": [
+      { "id": "a", "texto": "20%" },
+      { "id": "b", "texto": "5%" },
+      { "id": "c", "texto": "50%" },
+      { "id": "d", "texto": "80%" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "El uso de airbag frontal en conjunto con el cinturón de seguridad puede llegar a reducir un 20% la probabilidad de sufrir lesiones mortales.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El airbag",
+      "pagina": 30,
+      "fragmento": "puede llegar a reducir un 20% la probabilidad de sufrir lesiones mortales"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u2-seg-006",
+    "nivel": 1,
+    "unidad": "elementos-de-seguridad",
+    "tipo": "seleccion_multiple",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "¿Cuál es la separación máxima recomendada entre la cabeza y el apoya cabezas?",
+    "alternativas": [
+      { "id": "a", "texto": "4 cm" },
+      { "id": "b", "texto": "10 cm" },
+      { "id": "c", "texto": "1 cm" },
+      { "id": "d", "texto": "20 cm" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "La separación entre la cabeza y el apoya cabezas debe ser la mínima posible y nunca superior a 4 cm, para prevenir el efecto latigazo.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Los apoya cabezas",
+      "pagina": 31,
+      "fragmento": "nunca superior a 4 cm"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u2-seg-007",
+    "nivel": 1,
+    "unidad": "elementos-de-seguridad",
+    "tipo": "completar_frase",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "Chocar a una velocidad de 90 km/h provoca los mismos efectos que una caída desde el piso ___.",
+    "alternativas": [
+      { "id": "a", "texto": "11" },
+      { "id": "b", "texto": "5" },
+      { "id": "c", "texto": "20" },
+      { "id": "d", "texto": "3" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "Chocar a una velocidad de 90 km/h provoca los mismos efectos que una caída desde el piso 11.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El cinturón de seguridad",
+      "pagina": 26,
+      "fragmento": "Chocar a una velocidad de 90 km/h provoca los mismos efectos que una caída desde el piso 11"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u2-seg-008",
+    "nivel": 1,
+    "unidad": "elementos-de-seguridad",
+    "tipo": "seleccion_multiple",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "¿Qué es el llamado \"efecto submarino\"?",
+    "alternativas": [
+      { "id": "a", "texto": "Cuando la persona se desliza por debajo de la banda abdominal del cinturón durante una frenada brusca o un siniestro" },
+      { "id": "b", "texto": "Cuando el vehículo se hunde al cruzar una zona inundada" },
+      { "id": "c", "texto": "Cuando el airbag no llega a inflarse" },
+      { "id": "d", "texto": "Cuando el cinturón se traba y no se puede soltar" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "El uso adecuado del cinturón de seguridad evita el llamado efecto submarino, que se produce cuando la persona se desliza por debajo de la banda abdominal durante frenadas bruscas o siniestros.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El cinturón de seguridad",
+      "pagina": 28,
+      "fragmento": "El uso adecuado del cinturón de seguridad evita el llamado efecto submarino"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u2-seg-009",
+    "nivel": 1,
+    "unidad": "elementos-de-seguridad",
+    "tipo": "mito_o_realidad",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "Poner una toalla o un almohadón entre el cuerpo y el cinturón ayuda a que este funcione mejor.",
+    "respuestaCorrecta": false,
+    "explicacion": "Es falso. No pongas toallas o almohadones, ya que pueden favorecer el deslizamiento de la persona y anular las características del asiento que evitan el efecto submarino.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El cinturón de seguridad",
+      "pagina": 28,
+      "fragmento": "No pongas toallas o almohadones"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u2-seg-010",
+    "nivel": 1,
+    "unidad": "elementos-de-seguridad",
+    "tipo": "seleccion_multiple",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "Si una persona sale eyectada del vehículo por no usar el cinturón de seguridad, ¿qué pasa con su probabilidad de fallecer?",
+    "alternativas": [
+      { "id": "a", "texto": "Aumenta en un 300%" },
+      { "id": "b", "texto": "Disminuye en un 50%" },
+      { "id": "c", "texto": "No cambia" },
+      { "id": "d", "texto": "Aumenta solo un 10%" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "Si una persona sale eyectada del vehículo por no llevar el cinturón puesto, la probabilidad de sufrir una lesión medular aumenta en un 1.300% y la probabilidad de resultar fallecida aumenta en un 300%.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El cinturón de seguridad",
+      "pagina": 28,
+      "fragmento": "la probabilidad de sufrir una lesión medular aumenta en un 1.300% y la probabilidad de resultar fallecida aumenta en un 300%"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u2-seg-011",
+    "nivel": 1,
+    "unidad": "elementos-de-seguridad",
+    "tipo": "mito_o_realidad",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "La mayoría de los siniestros con víctimas ocurren en carreteras rurales, lejos de la ciudad.",
+    "respuestaCorrecta": false,
+    "explicacion": "Es falso. Cerca del 80% de los siniestros con víctimas ocurren en zonas urbanas.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El cinturón de seguridad",
+      "pagina": 29,
+      "fragmento": "Cerca del 80% de los siniestros con víctimas, ocurren en zonas urbanas"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u2-seg-012",
+    "nivel": 1,
+    "unidad": "elementos-de-seguridad",
+    "tipo": "mito_o_realidad",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "Como la mayoría de los siniestros con víctimas ocurren a pocos kilómetros de la casa, conviene usar el cinturón incluso en trayectos cortos.",
+    "respuestaCorrecta": true,
+    "explicacion": "Es verdadero. La mayoría de los siniestros con víctimas se producen a pocos kilómetros de sus casas, por lo que es importante usar el cinturón en todos los desplazamientos.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El cinturón de seguridad",
+      "pagina": 29,
+      "fragmento": "la mayoría de los siniestros con víctimas se producen a pocos kilómetros de sus casas"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u2-seg-013",
+    "nivel": 1,
+    "unidad": "elementos-de-seguridad",
+    "tipo": "mito_o_realidad",
+    "dificultad": 1,
+    "temaExamen": null,
+    "enunciado": "Durante el embarazo no se debe usar el cinturón de seguridad porque es peligroso para el bebé.",
+    "respuestaCorrecta": false,
+    "explicacion": "Es falso. Las personas embarazadas también deben ponerse el cinturón de seguridad; no usarlo aumenta el riesgo de lesionar o perder al bebé en un siniestro.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El cinturón de seguridad",
+      "pagina": 29,
+      "fragmento": "Las personas embarazadas también deben ponerse el cinturón de seguridad"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u2-seg-014",
+    "nivel": 1,
+    "unidad": "elementos-de-seguridad",
+    "tipo": "seleccion_multiple",
+    "dificultad": 1,
+    "temaExamen": null,
+    "enunciado": "¿Qué es el airbag?",
+    "alternativas": [
+      { "id": "a", "texto": "Una bolsa de aire que se infla en milésimas de segundo al producirse un impacto" },
+      { "id": "b", "texto": "Un cinturón adicional para el asiento trasero" },
+      { "id": "c", "texto": "Un sistema que frena el vehículo automáticamente" },
+      { "id": "d", "texto": "Una luz de advertencia en el panel de instrumentos" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "El airbag es una bolsa de aire que se infla en apenas unas milésimas de segundo al producirse un impacto.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El airbag",
+      "pagina": 30,
+      "fragmento": "El airbag es una bolsa de aire que se infla en apenas unas milésimas de segundo al producirse un impacto"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u2-seg-015",
+    "nivel": 1,
+    "unidad": "elementos-de-seguridad",
+    "tipo": "completar_frase",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "Al producirse un siniestro, la bolsa de aire del airbag se infla a una velocidad de hasta ___.",
+    "alternativas": [
+      { "id": "a", "texto": "300 km/h" },
+      { "id": "b", "texto": "30 km/h" },
+      { "id": "c", "texto": "3.000 km/h" },
+      { "id": "d", "texto": "100 km/h" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "Al producirse un siniestro, la bolsa de aire se infla a una velocidad de hasta 300 km/h.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El airbag",
+      "pagina": 30,
+      "fragmento": "la bolsa de aire se infla a una velocidad de hasta 300 km/h"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u2-seg-016",
+    "nivel": 1,
+    "unidad": "elementos-de-seguridad",
+    "tipo": "seleccion_multiple",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "¿Cómo se llama el movimiento violento del cuello, hacia adelante y luego hacia atrás, que ocurre cuando la cabeza no está apoyada en un impacto por atrás?",
+    "alternativas": [
+      { "id": "a", "texto": "Efecto latigazo" },
+      { "id": "b", "texto": "Efecto submarino" },
+      { "id": "c", "texto": "Efecto rebote" },
+      { "id": "d", "texto": "Efecto tijera" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "Cuando la cabeza no está apoyada, oscila respecto del torso y provoca un violento cambio de dirección en el cuello; este movimiento se denomina efecto latigazo.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Los apoya cabezas",
+      "pagina": 31,
+      "fragmento": "Este movimiento se denomina efecto latigazo"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u2-seg-017",
+    "nivel": 1,
+    "unidad": "elementos-de-seguridad",
+    "tipo": "mito_o_realidad",
+    "dificultad": 1,
+    "temaExamen": null,
+    "enunciado": "La posición correcta del apoya cabezas es detrás de la cabeza.",
+    "respuestaCorrecta": true,
+    "explicacion": "Es verdadero. La posición exacta es detrás de la cabeza, con el borde superior entre el límite superior de la cabeza y la altura de los ojos.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Los apoya cabezas",
+      "pagina": 31,
+      "fragmento": "La posición exacta es detrás de la cabeza"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u2-seg-018",
+    "nivel": 1,
+    "unidad": "elementos-de-seguridad",
+    "tipo": "mito_o_realidad",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "No usar correctamente el apoya cabezas puede desencadenar un esguince cervical.",
+    "respuestaCorrecta": true,
+    "explicacion": "Es verdadero. No utilizar correctamente el apoya cabezas podría desencadenar en un esguince cervical, una lesión que afecta músculos, articulaciones o ligamentos del cuello.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Los apoya cabezas",
+      "pagina": 31,
+      "fragmento": "podría desencadenar en un esguince cervical"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u2-seg-019",
+    "nivel": 1,
+    "unidad": "elementos-de-seguridad",
+    "tipo": "mito_o_realidad",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "Está bien ubicar el apoya cabezas más abajo que tu cabeza si te resulta más cómodo.",
+    "respuestaCorrecta": false,
+    "explicacion": "Es falso. Nunca debes ubicarlo por debajo de tu cabeza, esto reduce drásticamente su efectividad.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Los apoya cabezas",
+      "pagina": 31,
+      "fragmento": "Nunca debes ubicarlo por debajo de tu cabeza"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  }
+]
