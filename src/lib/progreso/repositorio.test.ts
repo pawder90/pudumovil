@@ -1,11 +1,13 @@
 import { beforeEach, describe, expect, it } from 'vitest'
 import { crearBaseDeDatosParaPruebas } from './db'
 import {
+  bloqueActualDeUnidad,
   bloqueDeRepasoDelDia,
   dominioDeUnidad,
   estadoDeUnidad,
   guardarBloqueEnCurso,
   limpiarBloqueEnCurso,
+  marcarBloqueActual,
   marcarEstadoUnidad,
   obtenerBloqueEnCurso,
   registrarResultadoSimulacro,
@@ -98,6 +100,20 @@ describe('estadoDeUnidad / marcarEstadoUnidad', () => {
 
     await marcarEstadoUnidad('u1', 1, 'completada', baseDeDatos)
     expect(await estadoDeUnidad('u1', baseDeDatos)).toBe('completada')
+  })
+})
+
+describe('bloqueActualDeUnidad / marcarBloqueActual', () => {
+  it('empieza en el bloque 0 mientras no se haya avanzado', async () => {
+    expect(await bloqueActualDeUnidad('u1', baseDeDatos)).toBe(0)
+  })
+
+  it('avanza el bloque pendiente sin perder el estado de la unidad', async () => {
+    await marcarEstadoUnidad('u1', 1, 'en_curso', baseDeDatos)
+    await marcarBloqueActual('u1', 1, baseDeDatos)
+
+    expect(await bloqueActualDeUnidad('u1', baseDeDatos)).toBe(1)
+    expect(await estadoDeUnidad('u1', baseDeDatos)).toBe('en_curso')
   })
 })
 

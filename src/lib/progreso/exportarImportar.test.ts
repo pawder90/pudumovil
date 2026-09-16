@@ -17,7 +17,7 @@ beforeEach(async () => {
 
 describe('exportarProgreso / importarProgreso', () => {
   it('lleva todo el progreso de una base de datos a otra', async () => {
-    await origen.progresoUnidad.put({ unidad: 'u1', nivel: 1, estado: 'completada' })
+    await origen.progresoUnidad.put({ unidad: 'u1', nivel: 1, estado: 'completada', bloqueActual: 3 })
     await origen.cajasLeitner.put({
       itemId: 'a',
       unidad: 'u1',
@@ -49,7 +49,7 @@ describe('exportarProgreso / importarProgreso', () => {
   })
 
   it('reemplaza el progreso existente en vez de sumarlo', async () => {
-    await destino.progresoUnidad.put({ unidad: 'viejo', nivel: 1, estado: 'completada' })
+    await destino.progresoUnidad.put({ unidad: 'viejo', nivel: 1, estado: 'completada', bloqueActual: 0 })
     const exportado = await exportarProgreso(origen) // origen está vacío
 
     await importarProgreso(exportado, destino)
