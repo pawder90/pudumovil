@@ -3,8 +3,10 @@ import { crearBaseDeDatosParaPruebas } from './db'
 import {
   bloqueDeRepasoDelDia,
   dominioDeUnidad,
+  estadoDeUnidad,
   guardarBloqueEnCurso,
   limpiarBloqueEnCurso,
+  marcarEstadoUnidad,
   obtenerBloqueEnCurso,
   registrarResultadoSimulacro,
   registrarRespuesta,
@@ -82,6 +84,20 @@ describe('bloqueEnCurso', () => {
 
     await limpiarBloqueEnCurso(baseDeDatos)
     expect(await obtenerBloqueEnCurso(baseDeDatos)).toBeUndefined()
+  })
+})
+
+describe('estadoDeUnidad / marcarEstadoUnidad', () => {
+  it('no tiene estado hasta que se marca uno', async () => {
+    expect(await estadoDeUnidad('u1', baseDeDatos)).toBeUndefined()
+  })
+
+  it('guarda y sobrescribe el estado de la unidad', async () => {
+    await marcarEstadoUnidad('u1', 1, 'en_curso', baseDeDatos)
+    expect(await estadoDeUnidad('u1', baseDeDatos)).toBe('en_curso')
+
+    await marcarEstadoUnidad('u1', 1, 'completada', baseDeDatos)
+    expect(await estadoDeUnidad('u1', baseDeDatos)).toBe('completada')
   })
 })
 

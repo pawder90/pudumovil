@@ -4,7 +4,13 @@
  * con la base de datos. Recibe la base como parámetro (por defecto `db`)
  * para poder probarse con una instancia aislada.
  */
-import { db, type BloqueEnCurso, type ResultadoSimulacro, type TipoSimulacro } from './db'
+import {
+  db,
+  type BloqueEnCurso,
+  type EstadoUnidad,
+  type ResultadoSimulacro,
+  type TipoSimulacro,
+} from './db'
 import {
   aplicarRespuesta,
   dominioUnidad,
@@ -65,6 +71,23 @@ export async function obtenerBloqueEnCurso(
 /** Se limpia al terminar la lección completa (spec R2). */
 export async function limpiarBloqueEnCurso(baseDeDatos: BaseDeDatos = db): Promise<void> {
   await baseDeDatos.bloqueEnCurso.delete('actual')
+}
+
+/** Estado guardado de una unidad, o `undefined` si nunca se tocó (spec R1: "bloqueada" por defecto). */
+export async function estadoDeUnidad(
+  unidad: string,
+  baseDeDatos: BaseDeDatos = db,
+): Promise<EstadoUnidad | undefined> {
+  return (await baseDeDatos.progresoUnidad.get(unidad))?.estado
+}
+
+export async function marcarEstadoUnidad(
+  unidad: string,
+  nivel: number,
+  estado: EstadoUnidad,
+  baseDeDatos: BaseDeDatos = db,
+): Promise<void> {
+  await baseDeDatos.progresoUnidad.put({ unidad, nivel, estado })
 }
 
 export async function registrarResultadoSimulacro(
