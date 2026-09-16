@@ -1,0 +1,125 @@
+.pantalla-bienvenida {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+  padding-top: var(--space-8);
+  background: linear-gradient(
+    180deg,
+    var(--color-fondo-bienvenida-inicio) 0%,
+    var(--color-fondo-bienvenida-fin) 100%
+  );
+}
+
+/* Encabezado accesible, oculto a la vista: el isologo ya lo dice. */
+.pantalla-bienvenida-titulo {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.pantalla-bienvenida-centro {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-6);
+  padding: 0 var(--space-6);
+}
+
+.pantalla-bienvenida-isologo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  width: min(65vw, 280px, 34dvh);
+  animation: pantalla-bienvenida-entra var(--motion-celebracion) var(--motion-easing-rebote) both;
+}
+
+/* El PNG trae aire transparente: se encuadra al cuerpo del personaje (605 × 875 de 1024). */
+.pantalla-bienvenida-personaje {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 605 / 875;
+}
+
+.pantalla-bienvenida-personaje img {
+  position: absolute;
+  top: -9.71%;
+  left: -33.88%;
+  width: 169.26%;
+  max-width: none;
+  height: auto;
+}
+
+.pantalla-bienvenida-wordmark {
+  width: 100%;
+  height: auto;
+}
+
+.pantalla-bienvenida-bajada {
+  max-width: 20em;
+  font: var(--typography-cuerpo);
+  color: var(--color-texto-secundario);
+  text-align: center;
+  text-wrap: balance;
+  animation: pantalla-bienvenida-sube var(--motion-transicion) var(--motion-easing-salida) both;
+  animation-delay: calc(var(--motion-celebracion) - var(--motion-transicion));
+}
+
+.pantalla-bienvenida-accion {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: var(--space-4) var(--space-4) var(--space-6);
+  animation: pantalla-bienvenida-sube var(--motion-transicion) var(--motion-easing-salida) both;
+  animation-delay: calc(var(--motion-celebracion) - var(--motion-transicion) / 2);
+}
+
+@keyframes pantalla-bienvenida-entra {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pantalla-bienvenida-sube {
+  from {
+    opacity: 0;
+    transform: translateY(var(--space-3));
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pantalla-bienvenida-aparece {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Sin escala ni rebote: solo opacidad. */
+@media (prefers-reduced-motion: reduce) {
+  .pantalla-bienvenida-isologo,
+  .pantalla-bienvenida-bajada,
+  .pantalla-bienvenida-accion {
+    animation-name: pantalla-bienvenida-aparece;
+    animation-delay: 0ms;
+  }
+}

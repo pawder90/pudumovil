@@ -201,6 +201,15 @@ Además: **Crema** `#FFF6E5` para celebraciones, y **Reflectante** `#FF7A1A` y *
 - Resultado en `typography.celebracion`.
 - Un botón primario para continuar.
 
+### 6.11 Pantalla de bienvenida
+
+- Aparece cada vez que se abre la app. "Comenzar" lleva al camino de niveles.
+- Fondo: gradiente vertical de `color.fondo.bienvenida-inicio` (Crema) a `color.fondo.bienvenida-fin` (Neblina).
+- Isologo centrado (personaje sobre el wordmark), con un ancho de 65 % de la pantalla y un máximo de 280 px.
+- Bajada en `typography.cuerpo` y `color.texto.secundario` (6,03 sobre Crema y 5,97 sobre Neblina).
+- Un único botón primario, a ancho completo, anclado abajo.
+- Entrada: isologo con escala de 0,9 a 1 (`motion.celebracion`, `easing-rebote`); luego la bajada y el botón suben con `motion.transicion` y `easing-salida`, escalonados. Sin animación en espera.
+
 ---
 
 ## 7. Ilustración

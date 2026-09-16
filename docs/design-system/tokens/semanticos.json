@@ -16,6 +16,16 @@
       "sutil": {
         "$value": "{color.asfalto.100}",
         "$type": "color"
+      },
+      "bienvenida-inicio": {
+        "$value": "{color.crema.50}",
+        "$type": "color",
+        "$description": "Parte superior del gradiente de la pantalla de bienvenida."
+      },
+      "bienvenida-fin": {
+        "$value": "{color.asfalto.50}",
+        "$type": "color",
+        "$description": "Parte inferior del gradiente de la pantalla de bienvenida."
       }
     },
     "texto": {
