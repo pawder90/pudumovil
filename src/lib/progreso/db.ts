@@ -11,6 +11,8 @@ export type ProgresoUnidad = {
   unidad: string // clave primaria, coincide con Item.unidad
   nivel: number
   estado: EstadoUnidad
+  /** Índice del próximo bloque a jugar (0 a NUM_BLOQUES_LECCION - 1, spec R1). */
+  bloqueActual: number
 }
 
 /** Ficha de repaso espaciado de un ítem (spec §5.8). */

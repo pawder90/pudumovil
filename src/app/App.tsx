@@ -1,7 +1,7 @@
-import { PaginaLeccion } from '@/features/leccion/PaginaLeccion'
+import { PaginaInicio } from '@/features/inicio/PaginaInicio'
 
 function App() {
-  return <PaginaLeccion />
+  return <PaginaInicio />
 }
 
 export default App

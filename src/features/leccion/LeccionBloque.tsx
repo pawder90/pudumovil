@@ -13,6 +13,7 @@ import type { BloqueEnCurso } from '@/lib/progreso/db'
 import {
   guardarBloqueEnCurso,
   limpiarBloqueEnCurso,
+  marcarBloqueActual,
   marcarEstadoUnidad,
   obtenerBloqueEnCurso,
   registrarRespuesta,
@@ -179,6 +180,8 @@ export function LeccionBloque({ unidad, nivel, indiceBloque, onSalir, onCompleta
       await limpiarBloqueEnCurso()
       if (indiceBloque === NUM_BLOQUES_LECCION - 1) {
         await marcarEstadoUnidad(unidad, nivel, 'completada')
+      } else {
+        await marcarBloqueActual(unidad, indiceBloque + 1)
       }
       setTerminado(true)
       return

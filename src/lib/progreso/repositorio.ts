@@ -87,7 +87,29 @@ export async function marcarEstadoUnidad(
   estado: EstadoUnidad,
   baseDeDatos: BaseDeDatos = db,
 ): Promise<void> {
-  await baseDeDatos.progresoUnidad.put({ unidad, nivel, estado })
+  const existente = await baseDeDatos.progresoUnidad.get(unidad)
+  await baseDeDatos.progresoUnidad.put({
+    unidad,
+    nivel,
+    estado,
+    bloqueActual: existente?.bloqueActual ?? 0,
+  })
+}
+
+/** Próximo bloque pendiente de la unidad, para retomar donde quedó (spec R1). */
+export async function bloqueActualDeUnidad(
+  unidad: string,
+  baseDeDatos: BaseDeDatos = db,
+): Promise<number> {
+  return (await baseDeDatos.progresoUnidad.get(unidad))?.bloqueActual ?? 0
+}
+
+export async function marcarBloqueActual(
+  unidad: string,
+  bloqueActual: number,
+  baseDeDatos: BaseDeDatos = db,
+): Promise<void> {
+  await baseDeDatos.progresoUnidad.update(unidad, { bloqueActual })
 }
 
 export async function registrarResultadoSimulacro(

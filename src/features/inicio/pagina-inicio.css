@@ -1,0 +1,30 @@
+.pagina-inicio {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: 480px;
+  margin: 0 auto;
+  padding: var(--space-4);
+}
+
+.pagina-inicio-cargando {
+  min-height: 100vh;
+}
+
+.pagina-inicio-nivel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.pagina-inicio-nivel-titulo {
+  font: var(--typography-subtitulo);
+}
+
+.pagina-inicio-camino {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-2) 0;
+}
