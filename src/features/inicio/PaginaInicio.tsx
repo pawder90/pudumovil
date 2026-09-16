@@ -10,6 +10,7 @@
 import { useEffect, useState } from 'react'
 import { itemsPorUnidad, NUM_BLOQUES_LECCION } from '@/lib/contenido/banco'
 import { configuracionExamen } from '@/lib/contenido/configuracion'
+import type { Nivel } from '@/lib/contenido/tipos'
 import type { EstadoUnidad } from '@/lib/progreso/db'
 import {
   bloqueActualDeUnidad,
@@ -25,6 +26,7 @@ import {
   type EstadoNodo,
 } from '@/components'
 import { LeccionBloque } from '../leccion/LeccionBloque'
+import { MiniSimulacro } from '../simulacro/MiniSimulacro'
 import './pagina-inicio.css'
 
 const NIVEL_1_UNIDADES = [
@@ -85,7 +87,11 @@ async function cargarUnidades(): Promise<InfoUnidad[]> {
 async function cargarPreparacion(unidades: InfoUnidad[]): Promise<Preparacion> {
   const cobertura = unidades.filter((u) => u.estado === 'completada').length / unidades.length
   const dominioPromedio = unidades.reduce((acc, u) => acc + u.dominio, 0) / unidades.length
-  const simulacros = await ultimosSimulacros('completo')
+  // Antes del primer simulacro completo, se usan los mini-simulacros (spec §5.6).
+  let simulacros = await ultimosSimulacros('completo')
+  if (simulacros.length === 0) {
+    simulacros = await ultimosSimulacros('mini')
+  }
 
   return calcularBarraPreparacion({
     cobertura,
@@ -96,12 +102,14 @@ async function cargarPreparacion(unidades: InfoUnidad[]): Promise<Preparacion> {
   })
 }
 
+type Seleccion =
+  | { tipo: 'leccion'; unidad: string; indiceBloque: number }
+  | { tipo: 'simulacro'; nivel: Nivel }
+
 export function PaginaInicio() {
   const [unidades, setUnidades] = useState<InfoUnidad[] | null>(null)
   const [preparacion, setPreparacion] = useState<Preparacion | null>(null)
-  const [seleccion, setSeleccion] = useState<{ unidad: string; indiceBloque: number } | null>(
-    null,
-  )
+  const [seleccion, setSeleccion] = useState<Seleccion | null>(null)
 
   async function cargar() {
     const infos = await cargarUnidades()
@@ -113,27 +121,34 @@ export function PaginaInicio() {
     cargar()
   }, [])
 
-  if (seleccion) {
+  function salirDeSeleccion() {
+    setSeleccion(null)
+    cargar()
+  }
+
+  if (seleccion?.tipo === 'leccion') {
     return (
       <LeccionBloque
         unidad={seleccion.unidad}
         nivel={1}
         indiceBloque={seleccion.indiceBloque}
-        onSalir={() => {
-          setSeleccion(null)
-          cargar()
-        }}
-        onCompletado={() => {
-          setSeleccion(null)
-          cargar()
-        }}
+        onSalir={salirDeSeleccion}
+        onCompletado={salirDeSeleccion}
       />
+    )
+  }
+
+  if (seleccion?.tipo === 'simulacro') {
+    return (
+      <MiniSimulacro nivel={seleccion.nivel} onSalir={salirDeSeleccion} onTerminado={salirDeSeleccion} />
     )
   }
 
   if (!unidades || !preparacion) {
     return <div className="pagina-inicio-cargando" aria-busy="true" />
   }
+
+  const nivel1Completo = unidades.every((u) => u.estado === 'completada')
 
   return (
     <div className="pagina-inicio">
@@ -154,12 +169,19 @@ export function PaginaInicio() {
               desplazamiento={DESPLAZAMIENTOS[indice % DESPLAZAMIENTOS.length]}
               onClick={() =>
                 setSeleccion({
+                  tipo: 'leccion',
                   unidad: unidad.slug,
                   indiceBloque: Math.min(unidad.bloqueActual, NUM_BLOQUES_LECCION - 1),
                 })
               }
             />
           ))}
+          <NodoCamino
+            estado={nivel1Completo ? 'simulacro' : 'bloqueado'}
+            etiqueta="Mini-simulacro"
+            desplazamiento={DESPLAZAMIENTOS[unidades.length % DESPLAZAMIENTOS.length]}
+            onClick={() => setSeleccion({ tipo: 'simulacro', nivel: 1 })}
+          />
         </div>
       </section>
 

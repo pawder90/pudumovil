@@ -50,4 +50,33 @@ describe('PaginaInicio', () => {
 
     expect(await screen.findByRole('button', { name: 'Comprobar' })).toBeInTheDocument()
   })
+
+  it('bloquea el mini-simulacro hasta completar todas las unidades del nivel', async () => {
+    render(<PaginaInicio />)
+
+    expect(
+      await screen.findByRole('button', { name: /Mini-simulacro, bloqueado/i }),
+    ).toBeDisabled()
+  })
+
+  it('habilita el mini-simulacro al completar las 4 unidades del nivel', async () => {
+    const usuario = userEvent.setup()
+    const unidades = [
+      'funcionamiento-del-automovil',
+      'elementos-de-seguridad',
+      'ninas-y-ninos-en-el-automovil',
+      'senales-de-transito-basicas',
+    ]
+    for (const unidad of unidades) {
+      await db.progresoUnidad.put({ unidad, nivel: 1, estado: 'completada', bloqueActual: 3 })
+    }
+
+    render(<PaginaInicio />)
+
+    const nodo = await screen.findByRole('button', { name: /Mini-simulacro, mini-simulacro/i })
+    expect(nodo).toBeEnabled()
+
+    await usuario.click(nodo)
+    expect(await screen.findByText('0 de 15')).toBeInTheDocument()
+  })
 })

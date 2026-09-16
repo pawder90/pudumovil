@@ -8,6 +8,7 @@
  */
 import { useEffect, useState } from 'react'
 import { NUM_BLOQUES_LECCION, itemsDelBloque } from '@/lib/contenido/banco'
+import { esCorrecta, letraDeOpcion, opcionesDelItem } from '@/lib/contenido/juego'
 import type { Item } from '@/lib/contenido/tipos'
 import type { BloqueEnCurso } from '@/lib/progreso/db'
 import {
@@ -38,34 +39,6 @@ type Props = {
 
 function idLeccion(unidad: string, indiceBloque: number): string {
   return `${unidad}-b${indiceBloque}`
-}
-
-function opcionesDelItem(item: Item): { id: string; texto: string }[] {
-  switch (item.tipo) {
-    case 'seleccion_multiple':
-    case 'completar_frase':
-      return item.alternativas
-    case 'mito_o_realidad':
-      return [
-        { id: 'verdadero', texto: 'Verdadero' },
-        { id: 'falso', texto: 'Falso' },
-      ]
-    default:
-      // Los demás tipos (escenas, ordenar pasos) llegan en unidades futuras.
-      throw new Error(`LeccionBloque: tipo de ítem no soportado aún: "${item.tipo}"`)
-  }
-}
-
-function esCorrecta(item: Item, opcionId: string): boolean {
-  switch (item.tipo) {
-    case 'seleccion_multiple':
-    case 'completar_frase':
-      return opcionId === item.respuestaCorrecta
-    case 'mito_o_realidad':
-      return (opcionId === 'verdadero') === item.respuestaCorrecta
-    default:
-      throw new Error(`LeccionBloque: tipo de ítem no soportado aún: "${item.tipo}"`)
-  }
 }
 
 export function LeccionBloque({ unidad, nivel, indiceBloque, onSalir, onCompletado }: Props) {
@@ -204,7 +177,7 @@ export function LeccionBloque({ unidad, nivel, indiceBloque, onSalir, onCompleta
         {opciones.map((opcion, indice) => (
           <Alternativa
             key={opcion.id}
-            letra={itemActual.tipo === 'mito_o_realidad' ? opcion.texto[0] : 'ABCD'[indice]}
+            letra={letraDeOpcion(itemActual, opcion, indice)}
             estado={estadoDeOpcion(opcion.id)}
             disabled={resultado !== null}
             onClick={() => setSeleccion(opcion.id)}

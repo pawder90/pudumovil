@@ -1,0 +1,106 @@
+.mini-simulacro {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: 480px;
+  margin: 0 auto;
+  padding: var(--space-4);
+}
+
+.mini-simulacro-encabezado {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.mini-simulacro-tiempo {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font: var(--typography-etiqueta);
+  color: var(--color-texto-secundario);
+  font-variant-numeric: tabular-nums;
+}
+
+.mini-simulacro-pregunta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  text-align: center;
+}
+
+.mini-simulacro-enunciado {
+  font: var(--typography-enunciado);
+}
+
+.mini-simulacro-doble {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font: var(--typography-etiqueta);
+  color: var(--color-logro-texto);
+}
+
+.mini-simulacro-opciones {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.mini-simulacro-revision {
+  align-items: center;
+  text-align: center;
+}
+
+.mini-simulacro-resultado-titulo {
+  font: var(--typography-titulo);
+}
+
+.mini-simulacro-resultado-puntaje {
+  font: var(--typography-cuerpo);
+  color: var(--color-texto-secundario);
+}
+
+.mini-simulacro-errores {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  width: 100%;
+  text-align: left;
+}
+
+.mini-simulacro-errores-titulo {
+  font: var(--typography-subtitulo);
+}
+
+.mini-simulacro-error {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding-bottom: var(--space-4);
+  border-bottom: var(--border-width-fino) solid var(--color-borde-default);
+}
+
+.mini-simulacro-error-enunciado {
+  font: var(--typography-enunciado);
+}
+
+.mini-simulacro-error-opciones {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.mini-simulacro-error-explicacion {
+  font: var(--typography-cuerpo);
+}
+
+.mini-simulacro-error-referencia {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font: var(--typography-etiqueta);
+  color: var(--color-texto-secundario);
+}
