@@ -1,0 +1,42 @@
+.leccion-bloque {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: 480px;
+  margin: 0 auto;
+  padding: var(--space-4);
+}
+
+.leccion-bloque-cargando,
+.leccion-bloque-fin {
+  align-items: center;
+  text-align: center;
+  padding-top: var(--space-12);
+}
+
+.leccion-bloque-fin-titulo {
+  font: var(--typography-titulo);
+}
+
+.leccion-bloque-fin-nota {
+  font: var(--typography-cuerpo);
+  color: var(--color-texto-secundario);
+}
+
+.leccion-bloque-pregunta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  text-align: center;
+}
+
+.leccion-bloque-enunciado {
+  font: var(--typography-enunciado);
+}
+
+.leccion-bloque-opciones {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}

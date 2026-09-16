@@ -41,3 +41,18 @@ export function itemsPorUnidad(unidad: string): Item[] {
 export function itemsPorNivel(nivel: Item['nivel']): Item[] {
   return banco.filter((item) => item.nivel === nivel)
 }
+
+/** Cuántos ítems de la unidad caen en cada uno de los 3 bloques de la lección (spec §5.3). */
+export const NUM_BLOQUES_LECCION = 3
+
+/**
+ * Ítems de un bloque de la lección de una unidad. Reparte los ítems de la
+ * unidad en `NUM_BLOQUES_LECCION` tramos consecutivos y de tamaño parejo,
+ * en el orden fijo del banco (spec §5.3: "cada lección se divide en 3
+ * bloques").
+ */
+export function itemsDelBloque(unidad: string, indiceBloque: number): Item[] {
+  const items = itemsPorUnidad(unidad)
+  const tamano = Math.ceil(items.length / NUM_BLOQUES_LECCION)
+  return items.slice(indiceBloque * tamano, (indiceBloque + 1) * tamano)
+}

@@ -1,5 +1,11 @@
 import { describe, expect, it } from 'vitest'
-import { banco, itemsPorNivel, itemsPorUnidad } from './banco'
+import {
+  NUM_BLOQUES_LECCION,
+  banco,
+  itemsDelBloque,
+  itemsPorNivel,
+  itemsPorUnidad,
+} from './banco'
 
 describe('banco de ítems', () => {
   it('no tiene ids duplicados', () => {
@@ -24,5 +30,23 @@ describe('banco de ítems', () => {
   it('itemsPorNivel filtra por el nivel declarado en cada ítem', () => {
     const items = itemsPorNivel(1)
     expect(items).toHaveLength(banco.length)
+  })
+})
+
+describe('itemsDelBloque', () => {
+  it('reparte todos los ítems de la unidad entre los bloques, sin repetir ni perder ninguno', () => {
+    const unidad = 'elementos-de-seguridad'
+    const total = itemsPorUnidad(unidad)
+    const repartidos = Array.from({ length: NUM_BLOQUES_LECCION }, (_, indice) =>
+      itemsDelBloque(unidad, indice),
+    ).flat()
+    expect(repartidos.map((item) => item.id)).toEqual(total.map((item) => item.id))
+  })
+
+  it('ningún bloque queda vacío para una unidad con al menos 3 ítems', () => {
+    const unidad = 'ninas-y-ninos-en-el-automovil'
+    for (let indice = 0; indice < NUM_BLOQUES_LECCION; indice += 1) {
+      expect(itemsDelBloque(unidad, indice).length).toBeGreaterThan(0)
+    }
   })
 })
