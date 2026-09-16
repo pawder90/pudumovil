@@ -1,0 +1,17 @@
+{
+  "simulacroCompleto": {
+    "preguntas": 35,
+    "minutos": 45,
+    "puntajeMax": 38,
+    "aprobacion": 33
+  },
+  "miniSimulacro": { "preguntas": 15, "minutos": 20, "aprobacionPct": 0.87 },
+  "temasDoblePuntaje": ["alcohol", "velocidad", "retencion_infantil"],
+  "barra": {
+    "pesoCobertura": 0.2,
+    "pesoDominio": 0.4,
+    "pesoSimulacros": 0.4,
+    "dominioMinimoUnidad": 0.7
+  },
+  "leitnerIntervalosDias": [1, 2, 4, 7, 14]
+}
