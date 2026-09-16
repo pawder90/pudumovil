@@ -11,6 +11,34 @@
   min-height: 100vh;
 }
 
+.pagina-inicio-repaso {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: var(--space-12);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-borde-default);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-fondo-superficie);
+  color: var(--color-texto-primario);
+  text-align: left;
+  cursor: pointer;
+}
+
+.pagina-inicio-repaso-texto {
+  display: flex;
+  flex-direction: column;
+}
+
+.pagina-inicio-repaso-titulo {
+  font: var(--typography-subtitulo);
+}
+
+.pagina-inicio-repaso-nota {
+  font: var(--typography-etiqueta);
+  color: var(--color-texto-secundario);
+}
+
 .pagina-inicio-nivel {
   display: flex;
   flex-direction: column;

@@ -1,0 +1,41 @@
+.repaso-diario {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: 480px;
+  margin: 0 auto;
+  padding: var(--space-4);
+}
+
+.repaso-diario-fin {
+  align-items: center;
+  text-align: center;
+  padding-top: var(--space-12);
+}
+
+.repaso-diario-fin-titulo {
+  font: var(--typography-titulo);
+}
+
+.repaso-diario-fin-nota {
+  font: var(--typography-cuerpo);
+  color: var(--color-texto-secundario);
+}
+
+.repaso-diario-pregunta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  text-align: center;
+}
+
+.repaso-diario-enunciado {
+  font: var(--typography-enunciado);
+}
+
+.repaso-diario-opciones {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}

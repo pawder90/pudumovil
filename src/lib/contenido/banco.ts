@@ -38,6 +38,11 @@ export function itemsPorUnidad(unidad: string): Item[] {
   return banco.filter((item) => item.unidad === unidad)
 }
 
+/** Ítem por id, para armar colas de repaso que cruzan unidades (spec R5). */
+export function itemPorId(id: string): Item | undefined {
+  return banco.find((item) => item.id === id)
+}
+
 export function itemsPorNivel(nivel: Item['nivel']): Item[] {
   return banco.filter((item) => item.nivel === nivel)
 }
