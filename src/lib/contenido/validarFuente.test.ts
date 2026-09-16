@@ -1,3 +1,5 @@
+// Esta prueba corre en Node (lee el libro desde disco); la app no carga esos tipos.
+/// <reference types="node" />
 import { readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { describe, expect, it } from 'vitest'
