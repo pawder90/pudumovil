@@ -14,6 +14,7 @@ import type { Nivel } from '@/lib/contenido/tipos'
 import type { EstadoUnidad } from '@/lib/progreso/db'
 import {
   bloqueActualDeUnidad,
+  bloqueDeRepasoDelDia,
   dominioDeUnidad,
   estadoDeUnidad,
   ultimosSimulacros,
@@ -21,12 +22,14 @@ import {
 import { calcularBarraPreparacion } from '@/lib/progreso/preparacion'
 import {
   BarraPreparacion,
+  Icono,
   NodoCamino,
   type DesplazamientoNodo,
   type EstadoNodo,
 } from '@/components'
 import { LeccionBloque } from '../leccion/LeccionBloque'
 import { MiniSimulacro } from '../simulacro/MiniSimulacro'
+import { RepasoDiario } from '../repaso/RepasoDiario'
 import './pagina-inicio.css'
 
 const NIVEL_1_UNIDADES = [
@@ -105,16 +108,19 @@ async function cargarPreparacion(unidades: InfoUnidad[]): Promise<Preparacion> {
 type Seleccion =
   | { tipo: 'leccion'; unidad: string; indiceBloque: number }
   | { tipo: 'simulacro'; nivel: Nivel }
+  | { tipo: 'repaso'; itemIds: string[] }
 
 export function PaginaInicio() {
   const [unidades, setUnidades] = useState<InfoUnidad[] | null>(null)
   const [preparacion, setPreparacion] = useState<Preparacion | null>(null)
+  const [repasoPendiente, setRepasoPendiente] = useState<string[]>([])
   const [seleccion, setSeleccion] = useState<Seleccion | null>(null)
 
   async function cargar() {
     const infos = await cargarUnidades()
     setUnidades(infos)
     setPreparacion(await cargarPreparacion(infos))
+    setRepasoPendiente(await bloqueDeRepasoDelDia())
   }
 
   useEffect(() => {
@@ -144,6 +150,16 @@ export function PaginaInicio() {
     )
   }
 
+  if (seleccion?.tipo === 'repaso') {
+    return (
+      <RepasoDiario
+        itemIds={seleccion.itemIds}
+        onSalir={salirDeSeleccion}
+        onTerminado={salirDeSeleccion}
+      />
+    )
+  }
+
   if (!unidades || !preparacion) {
     return <div className="pagina-inicio-cargando" aria-busy="true" />
   }
@@ -157,6 +173,22 @@ export function PaginaInicio() {
         lista={preparacion.listaParaExamen}
         nota={preparacion.mensajePendiente}
       />
+
+      {repasoPendiente.length > 0 && (
+        <button
+          type="button"
+          className="pagina-inicio-repaso"
+          onClick={() => setSeleccion({ tipo: 'repaso', itemIds: repasoPendiente })}
+        >
+          <Icono nombre="repetir" tamano={28} />
+          <span className="pagina-inicio-repaso-texto">
+            <span className="pagina-inicio-repaso-titulo">Repaso diario</span>
+            <span className="pagina-inicio-repaso-nota">
+              {repasoPendiente.length} ítem{repasoPendiente.length === 1 ? '' : 's'} por repasar hoy
+            </span>
+          </span>
+        </button>
+      )}
 
       <section className="pagina-inicio-nivel">
         <h2 className="pagina-inicio-nivel-titulo">Nivel 1 · Fundamentos</h2>
