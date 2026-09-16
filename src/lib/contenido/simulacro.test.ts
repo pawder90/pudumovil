@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { armarMiniSimulacro, puntajeAprobacion, puntajeMaximo } from './simulacro'
+import { armarMiniSimulacro, armarSimulacroCompleto, puntajeAprobacion, puntajeMaximo } from './simulacro'
 import type { Item } from './tipos'
 
 function item(id: string, temaExamen: string | null = null): Item {
@@ -64,6 +64,49 @@ describe('puntajeMaximo', () => {
       { item: item('c'), doblePuntaje: true },
     ]
     expect(puntajeMaximo(preguntas)).toBe(4)
+  })
+})
+
+describe('armarSimulacroCompleto', () => {
+  const temas = ['alcohol', 'velocidad', 'retencion_infantil']
+
+  it('toma la cantidad pedida de preguntas', () => {
+    const items = Array.from({ length: 40 }, (_, i) => item(`n-${i}`))
+    const preguntas = armarSimulacroCompleto(items, 35, temas, azarFijo)
+    expect(preguntas).toHaveLength(35)
+  })
+
+  it('incluye 1 pregunta de doble puntaje por cada tema con ítems elegibles', () => {
+    const items = [
+      ...Array.from({ length: 30 }, (_, i) => item(`n-${i}`)),
+      item('n-alcohol', 'alcohol'),
+      item('n-velocidad', 'velocidad'),
+      item('n-retencion', 'retencion_infantil'),
+    ]
+    const preguntas = armarSimulacroCompleto(items, 35, temas, azarFijo)
+    expect(preguntas.filter((p) => p.doblePuntaje)).toHaveLength(3)
+  })
+
+  it('no falla si algún tema todavía no tiene ítems (niveles sin contenido)', () => {
+    const items = [
+      ...Array.from({ length: 10 }, (_, i) => item(`n-${i}`)),
+      item('n-alcohol', 'alcohol'),
+    ]
+    const preguntas = armarSimulacroCompleto(items, 11, temas, azarFijo)
+    expect(preguntas.filter((p) => p.doblePuntaje)).toHaveLength(1)
+    expect(preguntas).toHaveLength(11)
+  })
+
+  it('no repite ítems', () => {
+    const items = [
+      ...Array.from({ length: 20 }, (_, i) => item(`n-${i}`)),
+      item('n-alcohol', 'alcohol'),
+      item('n-velocidad', 'velocidad'),
+      item('n-retencion', 'retencion_infantil'),
+    ]
+    const preguntas = armarSimulacroCompleto(items, 15, temas, azarFijo)
+    const ids = preguntas.map((p) => p.item.id)
+    expect(new Set(ids).size).toBe(ids.length)
   })
 })
 

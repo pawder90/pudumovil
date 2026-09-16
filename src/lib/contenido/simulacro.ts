@@ -52,3 +52,41 @@ export function puntajeMaximo(preguntas: PreguntaSimulacro[]): number {
 export function puntajeAprobacion(puntajeMaximoDelExamen: number, aprobacionPct: number): number {
   return Math.ceil(puntajeMaximoDelExamen * aprobacionPct)
 }
+
+/**
+ * Arma el banco de preguntas del simulacro completo (spec §5.7): replica el
+ * formato real con 1 pregunta de doble puntaje por cada tema elegible
+ * (alcohol, velocidad, retención infantil), tomando ítems de todos los
+ * niveles ya completados. Si a algún tema todavía no le corresponde ningún
+ * ítem del banco (niveles aún sin contenido), simplemente no aporta su
+ * pregunta de doble puntaje, en vez de fallar.
+ */
+export function armarSimulacroCompleto(
+  items: Item[],
+  numPreguntas: number,
+  temasDoblePuntaje: string[],
+  azar: () => number = Math.random,
+): PreguntaSimulacro[] {
+  const usados = new Set<string>()
+  const dobles: Item[] = []
+
+  for (const tema of temasDoblePuntaje) {
+    const elegibles = items.filter((item) => item.temaExamen === tema && !usados.has(item.id))
+    if (elegibles.length === 0) continue
+    const elegido = elegibles[Math.floor(azar() * elegibles.length)]
+    usados.add(elegido.id)
+    dobles.push(elegido)
+  }
+
+  const resto = mezclar(
+    items.filter((item) => !usados.has(item.id)),
+    azar,
+  ).slice(0, Math.max(0, numPreguntas - dobles.length))
+
+  const preguntas: PreguntaSimulacro[] = [
+    ...dobles.map((item) => ({ item, doblePuntaje: true })),
+    ...resto.map((item) => ({ item, doblePuntaje: false })),
+  ]
+
+  return mezclar(preguntas, azar)
+}

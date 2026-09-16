@@ -54,7 +54,8 @@
   color: var(--nodo-camino-bloqueado-icono);
 }
 
-.nodo-camino-estado-simulacro {
+.nodo-camino-estado-simulacro,
+.nodo-camino-estado-simulacro-completo {
   width: var(--nodo-camino-tamano-simulacro);
   height: var(--nodo-camino-tamano-simulacro);
   background-color: var(--nodo-camino-simulacro-fondo);

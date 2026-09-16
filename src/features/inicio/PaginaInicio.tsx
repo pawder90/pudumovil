@@ -8,7 +8,7 @@
  * futuras), sin inventar unidades que todavía no existen.
  */
 import { useEffect, useState } from 'react'
-import { itemsPorUnidad, NUM_BLOQUES_LECCION } from '@/lib/contenido/banco'
+import { banco, itemsPorUnidad, NUM_BLOQUES_LECCION } from '@/lib/contenido/banco'
 import { configuracionExamen } from '@/lib/contenido/configuracion'
 import type { Nivel } from '@/lib/contenido/tipos'
 import type { EstadoUnidad } from '@/lib/progreso/db'
@@ -29,8 +29,17 @@ import {
 } from '@/components'
 import { LeccionBloque } from '../leccion/LeccionBloque'
 import { MiniSimulacro } from '../simulacro/MiniSimulacro'
+import { SimulacroCompleto } from '../simulacro/SimulacroCompleto'
 import { RepasoDiario } from '../repaso/RepasoDiario'
 import './pagina-inicio.css'
+
+/**
+ * El simulacro completo se habilita al terminar el Nivel 3 (spec §5.7),
+ * pero ese nivel todavía no tiene banco de ítems. Se activa solo cuando el
+ * banco ya trae contenido del Nivel 3, para no inventar una condición sobre
+ * unidades que no existen.
+ */
+const NIVEL_3_TIENE_CONTENIDO = banco.some((item) => item.nivel === 3)
 
 const NIVEL_1_UNIDADES = [
   { slug: 'funcionamiento-del-automovil', titulo: 'Funcionamiento del automóvil' },
@@ -108,6 +117,7 @@ async function cargarPreparacion(unidades: InfoUnidad[]): Promise<Preparacion> {
 type Seleccion =
   | { tipo: 'leccion'; unidad: string; indiceBloque: number }
   | { tipo: 'simulacro'; nivel: Nivel }
+  | { tipo: 'simulacro-completo' }
   | { tipo: 'repaso'; itemIds: string[] }
 
 export function PaginaInicio() {
@@ -148,6 +158,10 @@ export function PaginaInicio() {
     return (
       <MiniSimulacro nivel={seleccion.nivel} onSalir={salirDeSeleccion} onTerminado={salirDeSeleccion} />
     )
+  }
+
+  if (seleccion?.tipo === 'simulacro-completo') {
+    return <SimulacroCompleto items={banco} onSalir={salirDeSeleccion} onTerminado={salirDeSeleccion} />
   }
 
   if (seleccion?.tipo === 'repaso') {
@@ -213,6 +227,19 @@ export function PaginaInicio() {
             etiqueta="Mini-simulacro"
             desplazamiento={DESPLAZAMIENTOS[unidades.length % DESPLAZAMIENTOS.length]}
             onClick={() => setSeleccion({ tipo: 'simulacro', nivel: 1 })}
+          />
+        </div>
+      </section>
+
+      <section className="pagina-inicio-nivel">
+        <h2 className="pagina-inicio-nivel-titulo">Simulacro completo</h2>
+        <div className="pagina-inicio-camino">
+          <NodoCamino
+            estado={NIVEL_3_TIENE_CONTENIDO ? 'simulacro-completo' : 'bloqueado'}
+            etiqueta={
+              NIVEL_3_TIENE_CONTENIDO ? 'Simulacro completo' : 'Se habilita al terminar el Nivel 3'
+            }
+            onClick={() => setSeleccion({ tipo: 'simulacro-completo' })}
           />
         </div>
       </section>
