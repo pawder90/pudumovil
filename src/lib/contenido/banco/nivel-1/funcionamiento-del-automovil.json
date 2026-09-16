@@ -1,0 +1,128 @@
+[
+  {
+    "id": "n1-u1-mec-001",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "seleccion_multiple",
+    "dificultad": 1,
+    "temaExamen": null,
+    "enunciado": "Se enciende en el panel de instrumentos la luz indicadora de la presión de aceite. ¿Qué debes hacer?",
+    "alternativas": [
+      { "id": "a", "texto": "Detener el motor de inmediato y no ponerlo en marcha hasta haberlo reparado" },
+      { "id": "b", "texto": "Seguir conduciendo con precaución hasta llegar a destino" },
+      { "id": "c", "texto": "Agregar bencina al estanque" },
+      { "id": "d", "texto": "Subir el volumen de la radio para escuchar mejor el motor" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "Cuando se enciende la luz de presión de aceite, el motor no está siendo correctamente lubricado. Debes detener el motor de inmediato y no ponerlo en marcha hasta haberlo reparado, ya que puedes causarle averías graves.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El sistema de lubricación",
+      "pagina": 12,
+      "fragmento": "debes detener el motor de inmediato y no ponerlo en marcha hasta haberlo reparado"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-002",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "mito_o_realidad",
+    "dificultad": 1,
+    "temaExamen": null,
+    "enunciado": "Un ruido anormalmente alto en el tubo de escape puede ser señal de roturas u orificios en el silenciador.",
+    "respuestaCorrecta": true,
+    "explicacion": "Es verdadero. Un ruido anormalmente alto del tubo de escape suele ser una señal de roturas o de orificios en el silenciador.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El sistema de escape",
+      "pagina": 14,
+      "fragmento": "Un ruido anormalmente alto del tubo de escape suele ser una señal de roturas o de orificios en el silenciador"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-003",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "mito_o_realidad",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "Si el sistema ABS llega a fallar, los frenos del vehículo dejan de funcionar por completo.",
+    "respuestaCorrecta": false,
+    "explicacion": "Es falso. Si el ABS llegase a fallar, los frenos seguirán funcionando; lo que se pierde es la función antibloqueo, no el frenado.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Los frenos",
+      "pagina": 17,
+      "fragmento": "Si el ABS llegase a fallar, los frenos seguirán funcionando"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-004",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "completar_frase",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "Para que los neumáticos frenen y agarren bien, sus surcos deben tener una profundidad mínima aconsejable de ___.",
+    "alternativas": [
+      { "id": "a", "texto": "3 mm" },
+      { "id": "b", "texto": "1 cm" },
+      { "id": "c", "texto": "5 mm" },
+      { "id": "d", "texto": "8 mm" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "Los dibujos o surcos de la banda de rodamiento deben tener una profundidad aconsejable mínima de 3 mm. Bajo 1,6 mm empeora la fricción con el pavimento mojado.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Los neumáticos",
+      "pagina": 18,
+      "fragmento": "profundidad aconsejable mínima de 3 mm"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-005",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "seleccion_multiple",
+    "dificultad": 1,
+    "temaExamen": null,
+    "enunciado": "Según el libro, ¿cada cuánto tiempo como máximo deben cambiarse los neumáticos, aunque tengan poco uso?",
+    "alternativas": [
+      { "id": "a", "texto": "Cada 5 años" },
+      { "id": "b", "texto": "Cada 10 años" },
+      { "id": "c", "texto": "Cada 2 años" },
+      { "id": "d", "texto": "Nunca, si el dibujo está bien" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "Los neumáticos deben ser cambiados al menos cada 5 años. Aunque tengan poco uso y su dibujo esté bien, el material envejece y pierden sus propiedades para rodar con seguridad.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Los neumáticos",
+      "pagina": 19,
+      "fragmento": "Los neumáticos deben ser cambiados al menos cada 5 años"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u1-mec-006",
+    "nivel": 1,
+    "unidad": "funcionamiento-del-automovil",
+    "tipo": "mito_o_realidad",
+    "dificultad": 1,
+    "temaExamen": null,
+    "enunciado": "Antes de poner el vehículo en movimiento, debes mirar a tu alrededor y chequear los puntos ciegos.",
+    "respuestaCorrecta": true,
+    "explicacion": "Es verdadero. Entre las cosas de las que siempre debes asegurarte está mirar a tu alrededor y chequear los puntos ciegos antes de poner tu vehículo en movimiento.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Siempre debes asegurarte de",
+      "pagina": 22,
+      "fragmento": "chequear los puntos ciegos antes de poner tu vehículo en movimiento"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  }
+]

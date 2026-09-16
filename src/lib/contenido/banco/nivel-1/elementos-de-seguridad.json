@@ -1,0 +1,134 @@
+[
+  {
+    "id": "n1-u2-seg-001",
+    "nivel": 1,
+    "unidad": "elementos-de-seguridad",
+    "tipo": "mito_o_realidad",
+    "dificultad": 1,
+    "temaExamen": null,
+    "enunciado": "Está permitido que dos personas viajen sujetas con un mismo cinturón de seguridad si el trayecto es corto.",
+    "respuestaCorrecta": false,
+    "explicacion": "Es falso. Nunca permitas que dos personas viajen sujetas con un mismo cinturón; cada persona debe ir bien sujeta con su propio cinturón, incluso en los asientos traseros.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El cinturón de seguridad",
+      "pagina": 26,
+      "fragmento": "Nunca permitas que dos personas viajen sujetas con un mismo cinturón"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u2-seg-002",
+    "nivel": 1,
+    "unidad": "elementos-de-seguridad",
+    "tipo": "seleccion_multiple",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "¿Desde qué año de fabricación del vehículo es obligatorio el uso del cinturón de seguridad en los asientos traseros?",
+    "alternativas": [
+      { "id": "a", "texto": "2002 o posterior" },
+      { "id": "b", "texto": "2010 o posterior" },
+      { "id": "c", "texto": "1995 o posterior" },
+      { "id": "d", "texto": "Solo en vehículos nuevos, sin fecha definida" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "El uso del cinturón de seguridad en los asientos traseros es obligatorio sólo si el vehículo tiene un año de fabricación 2002 o posterior.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El cinturón de seguridad",
+      "pagina": 26,
+      "fragmento": "es obligatorio sólo si el vehículo tiene un año de fabricación 2002 o posterior"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u2-seg-003",
+    "nivel": 1,
+    "unidad": "elementos-de-seguridad",
+    "tipo": "seleccion_multiple",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "Según los estudios citados en el libro, ¿qué riesgo enfrentan las personas que no usan el cinturón de seguridad en un siniestro?",
+    "alternativas": [
+      { "id": "a", "texto": "El doble de probabilidad de fallecer" },
+      { "id": "b", "texto": "La misma probabilidad que quienes sí lo usan" },
+      { "id": "c", "texto": "Menor probabilidad de sufrir lesiones" },
+      { "id": "d", "texto": "Ninguna diferencia relevante" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "El estudio de miles de siniestros demuestra que las personas que no usan el cinturón tienen el doble de probabilidad de fallecer en ellos.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El cinturón de seguridad",
+      "pagina": 28,
+      "fragmento": "tienen el doble de probabilidad de fallecer"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u2-seg-004",
+    "nivel": 1,
+    "unidad": "elementos-de-seguridad",
+    "tipo": "mito_o_realidad",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "El airbag protege igual de bien aunque no lleves puesto el cinturón de seguridad.",
+    "respuestaCorrecta": false,
+    "explicacion": "Es falso. El airbag no es eficaz si no se utiliza junto con el cinturón de seguridad; si el cinturón no retiene a la persona, el airbag puede provocarle graves lesiones al desplegarse.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El airbag",
+      "pagina": 30,
+      "fragmento": "El airbag no es eficaz si no se utiliza junto con el cinturón de seguridad"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u2-seg-005",
+    "nivel": 1,
+    "unidad": "elementos-de-seguridad",
+    "tipo": "completar_frase",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "Usar el airbag frontal junto con el cinturón de seguridad puede reducir hasta un ___ la probabilidad de sufrir lesiones mortales.",
+    "alternativas": [
+      { "id": "a", "texto": "20%" },
+      { "id": "b", "texto": "5%" },
+      { "id": "c", "texto": "50%" },
+      { "id": "d", "texto": "80%" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "El uso de airbag frontal en conjunto con el cinturón de seguridad puede llegar a reducir un 20% la probabilidad de sufrir lesiones mortales.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El airbag",
+      "pagina": 30,
+      "fragmento": "puede llegar a reducir un 20% la probabilidad de sufrir lesiones mortales"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u2-seg-006",
+    "nivel": 1,
+    "unidad": "elementos-de-seguridad",
+    "tipo": "seleccion_multiple",
+    "dificultad": 2,
+    "temaExamen": null,
+    "enunciado": "¿Cuál es la separación máxima recomendada entre la cabeza y el apoya cabezas?",
+    "alternativas": [
+      { "id": "a", "texto": "4 cm" },
+      { "id": "b", "texto": "10 cm" },
+      { "id": "c", "texto": "1 cm" },
+      { "id": "d", "texto": "20 cm" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "La separación entre la cabeza y el apoya cabezas debe ser la mínima posible y nunca superior a 4 cm, para prevenir el efecto latigazo.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Los apoya cabezas",
+      "pagina": 31,
+      "fragmento": "nunca superior a 4 cm"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  }
+]

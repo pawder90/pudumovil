@@ -1,0 +1,134 @@
+[
+  {
+    "id": "n1-u3-sri-001",
+    "nivel": 1,
+    "unidad": "ninas-y-ninos-en-el-automovil",
+    "tipo": "mito_o_realidad",
+    "dificultad": 1,
+    "temaExamen": "retencion_infantil",
+    "enunciado": "Las niñas y niños menores de 12 años pueden viajar en el asiento delantero si usan su Sistema de Retención Infantil.",
+    "respuestaCorrecta": false,
+    "explicacion": "Es falso. Se estableció la prohibición del traslado de menores de 12 años en los asientos delanteros de los vehículos; deben ir en el asiento trasero, excepto en vehículos de cabina simple.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Niñas y niños en el automóvil",
+      "pagina": 73,
+      "fragmento": "Se estableció la prohibición del traslado de menores de 12 años en los asientos delanteros"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u3-sri-002",
+    "nivel": 1,
+    "unidad": "ninas-y-ninos-en-el-automovil",
+    "tipo": "seleccion_multiple",
+    "dificultad": 2,
+    "temaExamen": "retencion_infantil",
+    "enunciado": "¿Qué sanción arriesga quien no cumple con la obligación de usar el Sistema de Retención Infantil?",
+    "alternativas": [
+      { "id": "a", "texto": "Multa de 1,5 a 3 UTM y suspensión de la licencia de 5 a 45 días" },
+      { "id": "b", "texto": "Solo una advertencia verbal, sin multa" },
+      { "id": "c", "texto": "Suspensión de la licencia de por vida" },
+      { "id": "d", "texto": "Multa fija de 1 UTM, sin suspensión de la licencia" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "El incumplimiento de estas medidas es sancionado como una falta gravísima: la multa es de 1,5 a 3 UTM y la suspensión de la Licencia de Conducir es de 5 a 45 días.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Niñas y niños en el automóvil",
+      "pagina": 73,
+      "fragmento": "la multa es de 1,5 a 3 UTM y la suspensión de la Licencia de Conducir de 5 a 45 días"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u3-sri-003",
+    "nivel": 1,
+    "unidad": "ninas-y-ninos-en-el-automovil",
+    "tipo": "seleccion_multiple",
+    "dificultad": 3,
+    "temaExamen": "retencion_infantil",
+    "enunciado": "¿Cuándo se permite instalar un Sistema de Retención Infantil en el asiento delantero?",
+    "alternativas": [
+      { "id": "a", "texto": "Solo en vehículos de cabina simple y con el airbag desactivado" },
+      { "id": "b", "texto": "Siempre que el niño o niña pese menos de 20 kg" },
+      { "id": "c", "texto": "Nunca, bajo ninguna circunstancia" },
+      { "id": "d", "texto": "Solo si nadie más viaja en el asiento delantero" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "Nunca debes poner un Sistema de Retención Infantil en el asiento delantero, con excepción de los vehículos con cabina simple, siempre y cuando se haya desactivado el airbag previamente.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "El airbag",
+      "pagina": 30,
+      "fragmento": "Nunca debes poner un Sistema de Retención Infantil en el asiento delantero"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u3-sri-004",
+    "nivel": 1,
+    "unidad": "ninas-y-ninos-en-el-automovil",
+    "tipo": "completar_frase",
+    "dificultad": 1,
+    "temaExamen": "retencion_infantil",
+    "enunciado": "Un Sistema de Retención Infantil mal instalado no protege adecuadamente, por eso siempre se debe ___ la silla al asiento del vehículo.",
+    "alternativas": [
+      { "id": "a", "texto": "fijar bien" },
+      { "id": "b", "texto": "cubrir con una manta" },
+      { "id": "c", "texto": "inclinar hacia adelante" },
+      { "id": "d", "texto": "dejar suelta" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "Un dispositivo mal instalado no brinda la protección necesaria, por eso se debe fijar bien la silla al asiento del vehículo, siguiendo el manual del SRI.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Uso correcto de un Sistema de Retención Infantil (SRI)",
+      "pagina": 74,
+      "fragmento": "se debe fijar bien la silla al asiento del vehículo"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u3-sri-005",
+    "nivel": 1,
+    "unidad": "ninas-y-ninos-en-el-automovil",
+    "tipo": "seleccion_multiple",
+    "dificultad": 2,
+    "temaExamen": "retencion_infantil",
+    "enunciado": "¿Hasta qué edad mínima se recomienda instalar el Sistema de Retención Infantil a contramarcha (mirando hacia atrás)?",
+    "alternativas": [
+      { "id": "a", "texto": "Hasta los dos años, como mínimo" },
+      { "id": "b", "texto": "Hasta los seis meses" },
+      { "id": "c", "texto": "Hasta el primer mes" },
+      { "id": "d", "texto": "No se recomienda instalarlo a contramarcha" }
+    ],
+    "respuestaCorrecta": "a",
+    "explicacion": "Se recomienda que el SRI sea instalado a contramarcha el mayor tiempo posible, hasta alcanzar los límites de peso y altura indicados por el fabricante, como mínimo hasta los dos años.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Consideraciones para elegir un Sistema de Retención Infantil (SRI)",
+      "pagina": 75,
+      "fragmento": "mínimo hasta los dos años"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  },
+  {
+    "id": "n1-u3-sri-006",
+    "nivel": 1,
+    "unidad": "ninas-y-ninos-en-el-automovil",
+    "tipo": "mito_o_realidad",
+    "dificultad": 1,
+    "temaExamen": "retencion_infantil",
+    "enunciado": "El traslado de niñas y niños en un Sistema de Retención Infantil es obligatorio en Chile desde 2006.",
+    "respuestaCorrecta": true,
+    "explicacion": "Es verdadero. Desde 2006 el traslado de niñas y niños en SRI es obligatorio; a partir de marzo de 2016 se aumentaron las exigencias.",
+    "fuente": {
+      "edicion": "conaset-2026-02",
+      "seccion": "Niñas y niños en el automóvil",
+      "pagina": 73,
+      "fragmento": "el traslado de niñas y niños en SRI es obligatorio"
+    },
+    "validacion": { "estado": "aprobado", "revisadoPor": "claude-sonnet-5-2026-09-16" }
+  }
+]
