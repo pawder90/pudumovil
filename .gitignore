@@ -15,6 +15,9 @@ dist-ssr
 # Tokens generados por Style Dictionary
 src/styles/generated/
 
+# Libro con derechos de autor
+docs/libro/
+
 # Service worker generado por vite-plugin-pwa
 dev-dist/
 
