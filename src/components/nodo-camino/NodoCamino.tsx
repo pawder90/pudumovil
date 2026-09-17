@@ -1,7 +1,7 @@
 import { Icono, type NombreIcono } from '../icono/Icono'
 import './nodo-camino.css'
 
-export type EstadoNodo = 'completado' | 'actual' | 'bloqueado' | 'simulacro'
+export type EstadoNodo = 'completado' | 'actual' | 'bloqueado' | 'simulacro' | 'simulacro-completo'
 export type DesplazamientoNodo = 'centro' | 'derecha' | 'izquierda'
 
 const DETALLE: Record<EstadoNodo, { icono: NombreIcono; estado: string }> = {
@@ -9,6 +9,7 @@ const DETALLE: Record<EstadoNodo, { icono: NombreIcono; estado: string }> = {
   actual: { icono: 'flecha-arriba', estado: 'disponible ahora' },
   bloqueado: { icono: 'candado', estado: 'bloqueado' },
   simulacro: { icono: 'trofeo', estado: 'mini-simulacro' },
+  'simulacro-completo': { icono: 'trofeo', estado: 'simulacro completo' },
 }
 
 type Props = {

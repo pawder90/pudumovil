@@ -1,0 +1,106 @@
+.simulacro-completo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: 480px;
+  margin: 0 auto;
+  padding: var(--space-4);
+}
+
+.simulacro-completo-encabezado {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.simulacro-completo-tiempo {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font: var(--typography-etiqueta);
+  color: var(--color-texto-secundario);
+  font-variant-numeric: tabular-nums;
+}
+
+.simulacro-completo-pregunta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  text-align: center;
+}
+
+.simulacro-completo-enunciado {
+  font: var(--typography-enunciado);
+}
+
+.simulacro-completo-doble {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font: var(--typography-etiqueta);
+  color: var(--color-logro-texto);
+}
+
+.simulacro-completo-opciones {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.simulacro-completo-revision {
+  align-items: center;
+  text-align: center;
+}
+
+.simulacro-completo-resultado-titulo {
+  font: var(--typography-titulo);
+}
+
+.simulacro-completo-resultado-puntaje {
+  font: var(--typography-cuerpo);
+  color: var(--color-texto-secundario);
+}
+
+.simulacro-completo-errores {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  width: 100%;
+  text-align: left;
+}
+
+.simulacro-completo-errores-titulo {
+  font: var(--typography-subtitulo);
+}
+
+.simulacro-completo-error {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding-bottom: var(--space-4);
+  border-bottom: var(--border-width-fino) solid var(--color-borde-default);
+}
+
+.simulacro-completo-error-enunciado {
+  font: var(--typography-enunciado);
+}
+
+.simulacro-completo-error-opciones {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.simulacro-completo-error-explicacion {
+  font: var(--typography-cuerpo);
+}
+
+.simulacro-completo-error-referencia {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font: var(--typography-etiqueta);
+  color: var(--color-texto-secundario);
+}
