@@ -31,6 +31,7 @@ import { LeccionBloque } from '../leccion/LeccionBloque'
 import { MiniSimulacro } from '../simulacro/MiniSimulacro'
 import { SimulacroCompleto } from '../simulacro/SimulacroCompleto'
 import { RepasoDiario } from '../repaso/RepasoDiario'
+import { PaginaAjustes } from '../ajustes/PaginaAjustes'
 import './pagina-inicio.css'
 
 /**
@@ -119,6 +120,7 @@ type Seleccion =
   | { tipo: 'simulacro'; nivel: Nivel }
   | { tipo: 'simulacro-completo' }
   | { tipo: 'repaso'; itemIds: string[] }
+  | { tipo: 'ajustes' }
 
 export function PaginaInicio() {
   const [unidades, setUnidades] = useState<InfoUnidad[] | null>(null)
@@ -174,6 +176,10 @@ export function PaginaInicio() {
     )
   }
 
+  if (seleccion?.tipo === 'ajustes') {
+    return <PaginaAjustes onSalir={salirDeSeleccion} />
+  }
+
   if (!unidades || !preparacion) {
     return <div className="pagina-inicio-cargando" aria-busy="true" />
   }
@@ -182,11 +188,21 @@ export function PaginaInicio() {
 
   return (
     <div className="pagina-inicio">
-      <BarraPreparacion
-        porcentaje={preparacion.porcentaje}
-        lista={preparacion.listaParaExamen}
-        nota={preparacion.mensajePendiente}
-      />
+      <div className="pagina-inicio-cabecera">
+        <BarraPreparacion
+          porcentaje={preparacion.porcentaje}
+          lista={preparacion.listaParaExamen}
+          nota={preparacion.mensajePendiente}
+        />
+        <button
+          type="button"
+          className="pagina-inicio-ajustes"
+          onClick={() => setSeleccion({ tipo: 'ajustes' })}
+          aria-label="Ajustes"
+        >
+          <Icono nombre="ajustes" tamano={24} />
+        </button>
+      </div>
 
       {repasoPendiente.length > 0 && (
         <button

@@ -11,6 +11,26 @@
   min-height: 100vh;
 }
 
+.pagina-inicio-cabecera {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.pagina-inicio-cabecera > .barra-preparacion {
+  flex: 1;
+}
+
+.pagina-inicio-ajustes {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: var(--toque-minimo);
+  height: var(--toque-minimo);
+  border-radius: var(--radius-full);
+  color: var(--color-texto-secundario);
+}
+
 .pagina-inicio-repaso {
   display: flex;
   align-items: center;
